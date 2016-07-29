@@ -1,4 +1,4 @@
 initialize-release
 tearDown
 
-	scamper delete.
+	scamper ifNil: [ Transcript showln: 'scamper is nil!' ] ifNotNil: [ scamper delete ].
