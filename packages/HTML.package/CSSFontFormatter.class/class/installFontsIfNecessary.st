@@ -1,4 +1,3 @@
 font installation
 installFontsIfNecessary
-	fontsInstalled ifNil: [self installFonts].
-	fontsInstalled ifFalse: [self installFonts].
+	(((FileDirectory uri: 'Scamper' , FileDirectory slash , 'fonts') fileNamesMatching: '*.ttf') size > self fontsInstalled) ifTrue: [self installFonts].
