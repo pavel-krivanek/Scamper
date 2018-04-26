@@ -1,5 +1,5 @@
 language: smalltalk
-sudo: true
+sudo: required
 
 smalltalk:
   - Squeak-5.0
