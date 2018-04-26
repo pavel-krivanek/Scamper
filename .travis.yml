@@ -2,7 +2,6 @@ notifications:
   email: false
 language: smalltalk
 sudo: required
-os: osx
 
 smalltalk:
   - Squeak-5.0
