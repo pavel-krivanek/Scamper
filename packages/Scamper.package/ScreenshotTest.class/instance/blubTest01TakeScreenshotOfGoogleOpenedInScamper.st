@@ -1,5 +1,5 @@
 testing
-test01TakeScreenshotOfGoogleOpenedInScamper
+blubTest01TakeScreenshotOfGoogleOpenedInScamper
 	| scamper |
 	
 	<timeout:20>
