@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"pseudoElementName" ],
-	"name" : "CSSPseudoElementSelector",
-	"pools" : [
-		 ],
 	"super" : "CSSSelector",
-	"type" : "normal" }
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pseudoElementName"
+	],
+	"name" : "CSSPseudoElementSelector",
+	"type" : "normal"
+}

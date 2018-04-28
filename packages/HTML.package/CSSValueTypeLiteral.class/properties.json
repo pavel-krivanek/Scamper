@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"literal" ],
-	"name" : "CSSValueTypeLiteral",
-	"pools" : [
-		 ],
 	"super" : "CSSValueType",
-	"type" : "normal" }
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"literal"
+	],
+	"name" : "CSSValueTypeLiteral",
+	"type" : "normal"
+}

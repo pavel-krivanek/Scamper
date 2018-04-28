@@ -1,15 +1,16 @@
 {
+	"commentStamp" : "",
+	"super" : "CSSFormatter",
 	"category" : "HTML-Formatter",
 	"classinstvars" : [
 		"fontsInstalled",
-		"fontSizeFactorMap" ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
+		"fontSizeFactorMap"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
-		"fontMap" ],
+		"fontMap"
+	],
 	"name" : "CSSFontFormatter",
-	"pools" : [
-		 ],
-	"super" : "CSSFormatter",
-	"type" : "normal" }
+	"type" : "normal"
+}

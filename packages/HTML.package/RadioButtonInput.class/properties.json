@@ -1,17 +1,16 @@
 {
-	"category" : "HTML-Forms",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "FormInput",
+	"category" : "HTML-Forms",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"inputSet",
 		"state",
 		"value",
-		"button" ],
+		"button"
+	],
 	"name" : "RadioButtonInput",
-	"pools" : [
-		 ],
-	"super" : "FormInput",
-	"type" : "normal" }
+	"type" : "normal"
+}

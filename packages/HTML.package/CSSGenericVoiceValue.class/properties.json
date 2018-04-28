@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "CSSGenericVoiceValue",
-	"pools" : [
-		 ],
 	"super" : "CSSValue",
-	"type" : "normal" }
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSSGenericVoiceValue",
+	"type" : "normal"
+}

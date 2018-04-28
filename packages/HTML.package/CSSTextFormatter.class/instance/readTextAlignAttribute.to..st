@@ -1,7 +1,7 @@
 parsing
 readTextAlignAttribute: aString to: aContext
 
-	aString splitBy: ' ' do: [ :attribute | 
+	aString splitOn: ' ' do: [ :attribute | 
 		(attribute = 'center') 
 			ifTrue: [ self put: #centered at: #align to: aContext ].
 		((attribute = 'left') or: [attribute = 'start']) 

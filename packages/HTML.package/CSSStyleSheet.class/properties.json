@@ -1,16 +1,15 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "tb 12/21/2005 11:45",
+	"super" : "CSSElement",
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"imports",
 		"content",
-		"url" ],
+		"url"
+	],
 	"name" : "CSSStyleSheet",
-	"pools" : [
-		 ],
-	"super" : "CSSElement",
-	"type" : "normal" }
+	"type" : "normal"
+}

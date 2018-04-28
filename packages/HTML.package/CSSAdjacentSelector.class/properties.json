@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "CSSAdjacentSelector",
-	"pools" : [
-		 ],
 	"super" : "CSSRelationshipSelector",
-	"type" : "normal" }
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSSAdjacentSelector",
+	"type" : "normal"
+}

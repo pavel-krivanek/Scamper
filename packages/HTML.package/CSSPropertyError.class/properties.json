@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-CSS-Errors",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"propertyName" ],
-	"name" : "CSSPropertyError",
-	"pools" : [
-		 ],
 	"super" : "CSSError",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"propertyName"
+	],
+	"name" : "CSSPropertyError",
+	"type" : "normal"
+}

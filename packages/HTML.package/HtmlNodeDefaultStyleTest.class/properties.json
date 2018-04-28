@@ -1,15 +1,14 @@
 {
-	"category" : "HTML-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "HTML-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"htmlFormatter",
-		"styleResolver" ],
+		"styleResolver"
+	],
 	"name" : "HtmlNodeDefaultStyleTest",
-	"pools" : [
-		 ],
-	"super" : "TestCase",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -2,6 +2,6 @@ drawing
 downloadBackgroundImageAsync: aUrl
 	| promise |
 	promise := Promise new.
-	[ promise resolveWith: aUrl asUrl retrieveContents ]
+	[ promise resolveWith: aUrl asZnUrl retrieveContents ]
 		forkAt: Processor userBackgroundPriority.
 	^ promise

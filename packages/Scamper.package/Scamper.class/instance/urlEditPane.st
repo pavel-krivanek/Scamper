@@ -21,7 +21,7 @@ urlEditPane
 				
 	reloadAndStopButton := (ScamperButton new)
 								selfChangeAction: #reload 
-								Icon: ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconRefresh) fullName))
+								Icon: (ImageReadWriter formFromFileNamed: self iconRefresh asFileReference)
 								labelInfo: #status.
 		
 	pane 	
@@ -32,17 +32,17 @@ urlEditPane
 		addMorph: (self 
 					simpleIconicButtonNamed: 'Home' translated
 					action: #visitStartPage
-					withIcon:  ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconHome) fullName)));
+					withIcon:  (ImageReadWriter formFromFileNamed: self iconHome asFileReference));
 		addTransparentSpacerOfSize: 5 @ 0;
 		addMorph: (self 
 					simpleIconicButtonNamed: 'Forward' translated 
 					action: #forward
-					withIcon:  ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconForward) fullName)));
+					withIcon:  (ImageReadWriter formFromFileNamed: self iconForward asFileReference));
 		addTransparentSpacerOfSize: 5 @ 0;
 		addMorph: (self 
 					simpleIconicButtonNamed: 'Back' translated 
 					action: #back
-					withIcon: ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconBackward) fullName)));
+					withIcon: (ImageReadWriter formFromFileNamed: self iconBackward asFileReference));
 		addTransparentSpacerOfSize: 5 @ 0;
 		
 		addMorphBack: reloadAndStopButton;
@@ -50,7 +50,7 @@ urlEditPane
 		addMorphBack: (self 
 					simpleIconicButtonNamed: 'Options' translated 
 					action: #switchOptionsPanel 
-					withIcon:  ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconOptions) fullName))).	
+					withIcon:  (ImageReadWriter formFromFileNamed: self iconOptions asFileReference)).
 					
 	paneURL acceptOnCR: true.
 	paneURL hideScrollBarsIndefinitely.

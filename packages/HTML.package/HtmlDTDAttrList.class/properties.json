@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-Validator",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"attributes" ],
-	"name" : "HtmlDTDAttrList",
-	"pools" : [
-		 ],
 	"super" : "HtmlDTDConstruct",
-	"type" : "normal" }
+	"category" : "HTML-Validator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"attributes"
+	],
+	"name" : "HtmlDTDAttrList",
+	"type" : "normal"
+}

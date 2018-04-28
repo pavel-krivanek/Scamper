@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-CSS-Errors",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "CSSPropertyValueNotValidError",
-	"pools" : [
-		 ],
 	"super" : "CSSPropertyError",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSSPropertyValueNotValidError",
+	"type" : "normal"
+}

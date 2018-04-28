@@ -1,15 +1,14 @@
 {
-	"category" : "Scamper-HTML-Morphs",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "LayoutProperties",
+	"category" : "Scamper-HTML-Morphs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"column",
-		"row" ],
+		"row"
+	],
 	"name" : "HtmlGridPosition",
-	"pools" : [
-		 ],
-	"super" : "LayoutProperties",
-	"type" : "normal" }
+	"type" : "normal"
+}

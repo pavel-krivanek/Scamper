@@ -1,15 +1,14 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "CSSValueType",
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"propertyName",
-		"valueType" ],
+		"valueType"
+	],
 	"name" : "CSSValueTypeProperty",
-	"pools" : [
-		 ],
-	"super" : "CSSValueType",
-	"type" : "normal" }
+	"type" : "normal"
+}

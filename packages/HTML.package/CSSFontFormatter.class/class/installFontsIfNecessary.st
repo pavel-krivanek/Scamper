@@ -1,4 +1,4 @@
 font installation
 installFontsIfNecessary
-	fontsInstalled ifNil: [self installFonts].
-	fontsInstalled ifFalse: [self installFonts].
+	"fontsInstalled ifNil: [self installFonts].
+	fontsInstalled ifFalse: [self installFonts]."

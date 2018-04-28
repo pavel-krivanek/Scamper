@@ -1,9 +1,9 @@
 initialization
 initialize
 	self initializeMIMEDatabase.
-	webClient := WebClient new.
-	webClient userAgent: Scamper userAgent.
-	documentQueue := SharedQueue new.
+	webClient := ZnClient new.
+"	webClient userAgent: Scamper userAgent.
+"	documentQueue := SharedQueue new.
 	recentDocuments := OrderedCollection new.
 	bookmarks := Dictionary new.
 	self loadBookmark.

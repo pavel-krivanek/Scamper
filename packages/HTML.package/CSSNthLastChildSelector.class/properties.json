@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "CSSNthLastChildSelector",
-	"pools" : [
-		 ],
 	"super" : "CSSPseudoClassSelector",
-	"type" : "normal" }
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSSNthLastChildSelector",
+	"type" : "normal"
+}

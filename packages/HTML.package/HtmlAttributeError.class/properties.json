@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-DOM-Errors",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"attribute" ],
-	"name" : "HtmlAttributeError",
-	"pools" : [
-		 ],
 	"super" : "HtmlError",
-	"type" : "normal" }
+	"category" : "HTML-DOM-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"attribute"
+	],
+	"name" : "HtmlAttributeError",
+	"type" : "normal"
+}

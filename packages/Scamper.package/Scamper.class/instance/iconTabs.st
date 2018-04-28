@@ -1,4 +1,4 @@
 window definition
 iconTabs
 	
-	^('Scamper/scamper-icons/png/copy-w24-h24.png')
+	^('Scamper/build-support/scamper-icons/png/copy-w24-h24.png')

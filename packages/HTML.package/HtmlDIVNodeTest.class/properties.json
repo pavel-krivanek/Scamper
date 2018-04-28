@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"divNode" ],
-	"name" : "HtmlDIVNodeTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "HTML-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"divNode"
+	],
+	"name" : "HtmlDIVNodeTest",
+	"type" : "normal"
+}

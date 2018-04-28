@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-DOM",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "HtmlNOSCRIPTNode",
-	"pools" : [
-		 ],
 	"super" : "HtmlDOMNode",
-	"type" : "normal" }
+	"category" : "HTML-DOM",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HtmlNOSCRIPTNode",
+	"type" : "normal"
+}

@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-CSS-Errors",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"element" ],
-	"name" : "CSSSelectorElementNotLowercaseError",
-	"pools" : [
-		 ],
 	"super" : "CSSSelectorError",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"element"
+	],
+	"name" : "CSSSelectorElementNotLowercaseError",
+	"type" : "normal"
+}

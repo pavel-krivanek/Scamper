@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"aNode" ],
-	"name" : "HtmlANodeTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "HTML-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aNode"
+	],
+	"name" : "HtmlANodeTest",
+	"type" : "normal"
+}

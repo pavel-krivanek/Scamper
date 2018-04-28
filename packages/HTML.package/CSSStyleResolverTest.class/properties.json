@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-CSS-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"styleResolver" ],
-	"name" : "CSSStyleResolverTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"styleResolver"
+	],
+	"name" : "CSSStyleResolverTest",
+	"type" : "normal"
+}

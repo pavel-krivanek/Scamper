@@ -1,7 +1,7 @@
 *HTML
 fromHTMLString: aString
-	(self fromColorName: aString) ifNotNilDo: [:color | ^color].
-	(self fromHexRGBString: aString) ifNotNilDo: [:color | ^color].
-	(self fromRGBPercentageFunction: aString) ifNotNilDo: [:color | ^color].
-	(self fromRGBFunction: aString) ifNotNilDo: [:color | ^color].
+	(self fromColorName: aString) ifNotNil: [:color | ^color].
+	(self fromHexRGBString: aString) ifNotNil: [:color | ^color].
+	(self fromRGBPercentageFunction: aString) ifNotNil: [:color | ^color].
+	(self fromRGBFunction: aString) ifNotNil: [:color | ^color].
 	^ self fromString: aString

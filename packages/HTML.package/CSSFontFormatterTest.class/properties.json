@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-CSS-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"fontFormatter" ],
-	"name" : "CSSFontFormatterTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fontFormatter"
+	],
+	"name" : "CSSFontFormatterTest",
+	"type" : "normal"
+}

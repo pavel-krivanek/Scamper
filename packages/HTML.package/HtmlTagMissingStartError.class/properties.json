@@ -1,15 +1,14 @@
 {
-	"category" : "HTML-DOM-Errors",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "HtmlTagStructureError",
+	"category" : "HTML-DOM-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"position",
-		"tag" ],
+		"tag"
+	],
 	"name" : "HtmlTagMissingStartError",
-	"pools" : [
-		 ],
-	"super" : "HtmlTagStructureError",
-	"type" : "normal" }
+	"type" : "normal"
+}

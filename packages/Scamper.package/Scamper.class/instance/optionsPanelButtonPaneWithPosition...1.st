@@ -20,15 +20,15 @@ optionsPanelButtonPaneWithPosition: aPosition
 		addMorph: (self simpleIconicButtonNamed: 'Bookmarks' translated
 						action:  #visitBookmarksPage  
 						withIcon: ((ImageReadWriter formFromFileNamed:  
-							(FileDirectory uri: self iconBookmark) fullName)));
+							(self iconBookmark asFileReference))));
 		addMorph: (self simpleIconicButtonNamed: 'Add Site as a Bookmark' translated 
 						action: #addToBookmark   
 						withIcon: ((ImageReadWriter formFromFileNamed:
-						(FileDirectory uri: self iconAddBookmark) fullName)));
+						(self iconAddBookmark asFileReference))));
 		addMorph: (self simpleIconicButtonNamed: 'History' translated 
 						action: #visitHistoryPage  
 						withIcon: ((ImageReadWriter formFromFileNamed:  
-							(FileDirectory uri: self iconHistory) fullName))).
+							(self iconHistory asFileReference)))).
 				
 	^ pane.
 				

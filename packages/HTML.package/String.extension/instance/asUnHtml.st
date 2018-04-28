@@ -11,7 +11,7 @@ they were in text."
 			ifTrue: [in unCommand] 	"Absorb <...><...>"
 			ifFalse: [(char := in next) = $&
 						ifTrue: [rest := in upTo: $;.
-								out nextPutAll: (HtmlEntities
+								out nextPutAll: (HtmlEntities all
 									at: rest
 									ifAbsent: [
 										(rest beginsWith: '#')

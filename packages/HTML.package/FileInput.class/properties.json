@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-Forms",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "FileInput",
-	"pools" : [
-		 ],
 	"super" : "TextInput",
-	"type" : "normal" }
+	"category" : "HTML-Forms",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FileInput",
+	"type" : "normal"
+}

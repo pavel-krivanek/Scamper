@@ -9,7 +9,7 @@ changeBetweenReloadAndStopWithState: aState
 		ifTrue: [
 				^ self 
 					selfChangeAction: #reload 
-					Icon: ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconRefresh) fullName)) 
+					Icon: (ImageReadWriter formFromFileNamed: self iconRefresh asFileReference)
 					labelInfo: 'Reload'
 				].
 			
@@ -17,7 +17,7 @@ changeBetweenReloadAndStopWithState: aState
 		ifTrue: [
 				^ self 
 					selfChangeAction: #stopEverything  
-					Icon: ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconCancel) fullName)) 
+					Icon: ((ImageReadWriter formFromFileNamed: self iconCancel asFileReference)) 
 					labelInfo: 'Cancel'
 				].
 			
@@ -25,6 +25,6 @@ changeBetweenReloadAndStopWithState: aState
 		ifTrue: [
 				^ self 
 					selfChangeAction: #stopEverything  
-					Icon: ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconCancel) fullName)) 
+					Icon: ((ImageReadWriter formFromFileNamed: self iconCancel asFileReference)) 
 					labelInfo: 'Cancel'
 				].

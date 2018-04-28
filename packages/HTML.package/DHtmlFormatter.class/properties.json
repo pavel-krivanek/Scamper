@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-Formatter",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"fontSpecs" ],
-	"name" : "DHtmlFormatter",
-	"pools" : [
-		 ],
 	"super" : "HtmlFormatter",
-	"type" : "normal" }
+	"category" : "HTML-Formatter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fontSpecs"
+	],
+	"name" : "DHtmlFormatter",
+	"type" : "normal"
+}

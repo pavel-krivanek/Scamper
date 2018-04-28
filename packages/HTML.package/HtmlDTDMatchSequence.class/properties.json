@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-Validator",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "HtmlDTDMatchSequence",
-	"pools" : [
-		 ],
 	"super" : "HtmlDTDMatchGroup",
-	"type" : "normal" }
+	"category" : "HTML-Validator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HtmlDTDMatchSequence",
+	"type" : "normal"
+}

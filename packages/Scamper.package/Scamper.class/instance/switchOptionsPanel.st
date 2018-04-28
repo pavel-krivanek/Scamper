@@ -5,7 +5,7 @@ switchOptionsPanel
 	(optionsPanel isNil) 
 	ifTrue: [
 	
-	optionsPanel := (RectangleMorph new)
+	optionsPanel := (BorderedMorph new)
 						position: self optionsPanelPosition;
 						width: self optionsPanelWidth;
 						height: self optionsPanelHeight;

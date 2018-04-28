@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-CSS-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"cssformatter" ],
-	"name" : "CSSLengthUnitsTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cssformatter"
+	],
+	"name" : "CSSLengthUnitsTest",
+	"type" : "normal"
+}

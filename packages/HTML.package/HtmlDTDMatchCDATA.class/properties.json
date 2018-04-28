@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-Validator",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		"CData" ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "HtmlDTDMatchCDATA",
-	"pools" : [
-		 ],
 	"super" : "HtmlDTDMatchExpression",
-	"type" : "normal" }
+	"category" : "HTML-Validator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CData"
+	],
+	"instvars" : [ ],
+	"name" : "HtmlDTDMatchCDATA",
+	"type" : "normal"
+}

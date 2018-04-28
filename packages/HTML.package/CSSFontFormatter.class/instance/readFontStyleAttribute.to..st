@@ -7,4 +7,4 @@ readFontStyleAttribute: aString to: aContext
 		'normal' -> false
 	}.
 	
-	(map at: aString ifAbsent: [nil]) ifNotNilDo: [:value | aContext at: #italic put: value]
+	(map at: aString ifAbsent: [nil]) ifNotNil: [:value | aContext at: #italic put: value]

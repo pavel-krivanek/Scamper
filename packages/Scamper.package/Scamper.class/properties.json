@@ -1,11 +1,13 @@
 {
+	"commentStamp" : "<historical>",
+	"super" : "Model",
 	"category" : "Scamper-Core",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"LongtimeCookies",
-		"StartUrl" ],
-	"commentStamp" : "<historical>",
+		"StartUrl"
+	],
 	"instvars" : [
 		"status",
 		"debugInfo",
@@ -27,9 +29,8 @@
 		"reloadAndStopButton",
 		"tabPaneVariable",
 		"currentTab",
-		"optionsPanel" ],
+		"optionsPanel"
+	],
 	"name" : "Scamper",
-	"pools" : [
-		 ],
-	"super" : "Model",
-	"type" : "normal" }
+	"type" : "normal"
+}

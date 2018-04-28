@@ -19,5 +19,5 @@ readFontAttribute: aString to: aContext
 			ifFalse: [ 
 				(self isValidWeightValue: values first)
 					ifTrue: [self readFontWeightAttribute: values first to: shorthandContext ]]].
-	values last ifNotNilDo: [:val | self readFontFamilyAttribute: val to: shorthandContext].
+	values last ifNotNil: [:val | self readFontFamilyAttribute: val to: shorthandContext].
 	aContext addAll: shorthandContext

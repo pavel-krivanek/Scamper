@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-DOM",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "HtmlHRNode",
-	"pools" : [
-		 ],
 	"super" : "HtmlDOMNode",
-	"type" : "normal" }
+	"category" : "HTML-DOM",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HtmlHRNode",
+	"type" : "normal"
+}

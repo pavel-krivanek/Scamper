@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-CSS-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"displayFormatter" ],
-	"name" : "CSSDisplayFormatterTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"displayFormatter"
+	],
+	"name" : "CSSDisplayFormatterTest",
+	"type" : "normal"
+}

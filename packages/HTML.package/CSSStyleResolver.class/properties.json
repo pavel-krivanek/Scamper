@@ -1,15 +1,14 @@
 {
-	"category" : "HTML-Formatter",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "HTML-Formatter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"cssPrefixMap",
-		"domNode" ],
+		"domNode"
+	],
 	"name" : "CSSStyleResolver",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

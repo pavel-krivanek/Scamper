@@ -1,18 +1,17 @@
 {
-	"category" : "HTML-Forms",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "FormInput",
+	"category" : "HTML-Forms",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"button",
 		"name",
 		"value",
 		"state",
-		"checkedByDefault" ],
+		"checkedByDefault"
+	],
 	"name" : "ToggleButtonInput",
-	"pools" : [
-		 ],
-	"super" : "FormInput",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -1,18 +1,19 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "HTML-PList",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"ReadTranslations",
-		"WriteTranslations" ],
-	"commentStamp" : "",
+		"WriteTranslations"
+	],
 	"instvars" : [
 		"stream",
 		"arrayItemsPerLine",
 		"dictionaryItemsPerLine",
-		"indentLevel" ],
+		"indentLevel"
+	],
 	"name" : "HtmlPListSerializer",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

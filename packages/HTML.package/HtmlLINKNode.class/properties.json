@@ -1,15 +1,14 @@
 {
-	"category" : "HTML-DOM",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "HtmlDOMNode",
+	"category" : "HTML-DOM",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"stylesheet",
-		"href" ],
+		"href"
+	],
 	"name" : "HtmlLINKNode",
-	"pools" : [
-		 ],
-	"super" : "HtmlDOMNode",
-	"type" : "normal" }
+	"type" : "normal"
+}

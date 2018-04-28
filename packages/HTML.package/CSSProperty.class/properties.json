@@ -1,19 +1,18 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "CSSElement",
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"propertyName",
 		"propertyValue",
 		"propertyString",
 		"definition",
 		"important",
-		"isDerived" ],
+		"isDerived"
+	],
 	"name" : "CSSProperty",
-	"pools" : [
-		 ],
-	"super" : "CSSElement",
-	"type" : "normal" }
+	"type" : "normal"
+}

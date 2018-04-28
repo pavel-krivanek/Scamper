@@ -1,17 +1,16 @@
 {
-	"category" : "HTML-Forms",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "FormInput",
+	"category" : "HTML-Forms",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"name",
 		"defaultValue",
 		"listMorph",
-		"values" ],
+		"values"
+	],
 	"name" : "SelectionInput",
-	"pools" : [
-		 ],
-	"super" : "FormInput",
-	"type" : "normal" }
+	"type" : "normal"
+}

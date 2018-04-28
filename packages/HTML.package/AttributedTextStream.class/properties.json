@@ -1,18 +1,17 @@
 {
-	"category" : "HTML-Formatter",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "Stream",
+	"category" : "HTML-Formatter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"characters",
 		"attributeRuns",
 		"attributeValues",
 		"currentAttributes",
-		"currentRun" ],
+		"currentRun"
+	],
 	"name" : "AttributedTextStream",
-	"pools" : [
-		 ],
-	"super" : "Stream",
-	"type" : "normal" }
+	"type" : "normal"
+}

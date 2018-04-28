@@ -1,15 +1,14 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "CSSValueTypeConstraint",
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"n",
-		"m" ],
+		"m"
+	],
 	"name" : "CSSValueTypeNToMOf",
-	"pools" : [
-		 ],
-	"super" : "CSSValueTypeConstraint",
-	"type" : "normal" }
+	"type" : "normal"
+}

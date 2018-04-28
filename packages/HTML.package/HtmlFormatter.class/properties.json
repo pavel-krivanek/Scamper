@@ -1,11 +1,13 @@
 {
+	"commentStamp" : "ls 10/28/2003 11:56",
+	"super" : "Object",
 	"category" : "HTML-Formatter",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"CSNonSeparators",
-		"CSSeparators" ],
-	"commentStamp" : "ls 10/28/2003 11:56",
+		"CSSeparators"
+	],
 	"instvars" : [
 		"browser",
 		"baseUrl",
@@ -19,9 +21,8 @@
 		"precedingSpaces",
 		"precedingNewlines",
 		"morphsToEmbed",
-		"incompleteMorphs" ],
+		"incompleteMorphs"
+	],
 	"name" : "HtmlFormatter",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

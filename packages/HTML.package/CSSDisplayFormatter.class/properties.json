@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-Formatter",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "CSSDisplayFormatter",
-	"pools" : [
-		 ],
 	"super" : "CSSFormatter",
-	"type" : "normal" }
+	"category" : "HTML-Formatter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSSDisplayFormatter",
+	"type" : "normal"
+}

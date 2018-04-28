@@ -27,7 +27,7 @@ buttonRowPane
 		addMorphBack: (self 
 					simpleIconicButtonNamed: 'Stop'
 					action: #stopEverything
-					withIcon:  ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconCancel) fullName)));
+					withIcon:  ((ImageReadWriter formFromFileNamed:  (self iconCancel asFileReference))));
 		addTransparentSpacerOfSize: 5 @ 0;
 		addMorphBack: (self 
 					simpleButtonNamed: 'Tabs' translated

@@ -1,7 +1,7 @@
 parsing
 readTextDecorationAttribute: aString to: aContext
 
-	aString splitBy: ' ' do: [ :attribute | 
+	aString splitOn: ' ' do: [ :attribute | 
 		(attribute = 'underline') 
 			ifTrue: [ self put: true at: #underlined to: aContext ].
 		(attribute = 'line-through') 

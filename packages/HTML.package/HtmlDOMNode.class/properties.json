@@ -1,11 +1,13 @@
 {
+	"commentStamp" : "",
+	"super" : "HtmlParseNode",
 	"category" : "HTML-DOM",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"DefaultRules",
-		"HTML401" ],
-	"commentStamp" : "",
+		"HTML401"
+	],
 	"instvars" : [
 		"attributes",
 		"hasTrailingSlash",
@@ -19,9 +21,8 @@
 		"htmlMorph",
 		"associatedForm",
 		"computedStyles",
-		"isRenderedInline" ],
+		"isRenderedInline"
+	],
 	"name" : "HtmlDOMNode",
-	"pools" : [
-		 ],
-	"super" : "HtmlParseNode",
-	"type" : "normal" }
+	"type" : "normal"
+}

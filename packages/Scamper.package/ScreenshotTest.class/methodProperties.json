@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"saveScreenshotOf:toFile:" : "wg 7/17/2015 00:56",
-		"setUp" : "MR 7/29/2016 22:08",
-		"tearDown" : "MR 7/29/2016 22:08",
-		"test01TakeScreenshotOfGoogleOpenedInScamper" : "MR 7/29/2016 22:12" } }

@@ -1,15 +1,16 @@
 {
+	"commentStamp" : "",
+	"super" : "HtmlSyntaxError",
 	"category" : "HTML-DOM-Errors",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"CharactersToEntities",
-		"SpecialCharacters" ],
-	"commentStamp" : "",
+		"SpecialCharacters"
+	],
 	"instvars" : [
-		"position" ],
+		"position"
+	],
 	"name" : "HtmlUnescapedSpecialCharacterError",
-	"pools" : [
-		 ],
-	"super" : "HtmlSyntaxError",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-Validator",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		"Empty" ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "HtmlDTDMatchEmpty",
-	"pools" : [
-		 ],
 	"super" : "HtmlDTDMatchExpression",
-	"type" : "normal" }
+	"category" : "HTML-Validator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Empty"
+	],
+	"instvars" : [ ],
+	"name" : "HtmlDTDMatchEmpty",
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-CSS-Errors",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "CSSImportAfterStyleRuleError",
-	"pools" : [
-		 ],
 	"super" : "CSSError",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSSImportAfterStyleRuleError",
+	"type" : "normal"
+}

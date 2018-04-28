@@ -1,19 +1,18 @@
 {
-	"category" : "Scamper-HTML-Morphs",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scamper-HTML-Morphs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"breadth",
 		"min",
 		"max",
 		"position",
 		"ratio",
-		"start" ],
+		"start"
+	],
 	"name" : "HtmlGridSpace",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

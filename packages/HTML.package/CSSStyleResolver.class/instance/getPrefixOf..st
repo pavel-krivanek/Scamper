@@ -1,4 +1,4 @@
 formatter-resolution
 getPrefixOf: aString
 
-	^(aString splitBy: '-') first.
+	^(aString splitOn: '-') first.

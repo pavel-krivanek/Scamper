@@ -1,7 +1,7 @@
 user interface
 loadBookmark
 	| directory favorite |
-	favorite := 'Bookmark'.
+"	favorite := 'Bookmark'.
 	directory := FileDirectory default.
 	(directory directoryExists: favorite)
 			ifTrue:[self bookDir: (directory directoryNamed: favorite).
@@ -9,4 +9,4 @@ loadBookmark
 			ifFalse:[directory createDirectory: favorite.
 					self bookDir: (directory directoryNamed: favorite).
 					self bookmark: Dictionary new ].
-	
+"	

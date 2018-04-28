@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-CSS-Errors",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "CSSColorAndBackgroundColorNotSet",
-	"pools" : [
-		 ],
 	"super" : "CSSPropertyError",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSSColorAndBackgroundColorNotSet",
+	"type" : "normal"
+}

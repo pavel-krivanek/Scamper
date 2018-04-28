@@ -6,4 +6,4 @@ readFontWeightAttribute: aString to: aContext
 		'normal' -> false
 	}.
 	
-	(map at: aString ifAbsent: [nil]) ifNotNilDo: [:value | aContext at: #bold put: value]
+	(map at: aString ifAbsent: [nil]) ifNotNil: [:value | aContext at: #bold put: value]

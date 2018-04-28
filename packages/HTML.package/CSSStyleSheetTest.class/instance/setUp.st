@@ -1,3 +1,3 @@
 running
 setUp
-	self timeout: 300.
+	self timeLimit: 60 seconds.

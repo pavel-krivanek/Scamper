@@ -1,14 +1,13 @@
 {
-	"category" : "HTML-CSS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"media" ],
-	"name" : "CSSRule",
-	"pools" : [
-		 ],
 	"super" : "CSSElement",
-	"type" : "normal" }
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"media"
+	],
+	"name" : "CSSRule",
+	"type" : "normal"
+}

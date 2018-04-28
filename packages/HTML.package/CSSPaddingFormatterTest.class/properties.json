@@ -1,14 +1,11 @@
 {
-	"category" : "HTML-CSS-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "CSSPaddingFormatterTest",
-	"pools" : [
-		 ],
 	"super" : "CSSDistanceFormatterTest",
-	"type" : "normal" }
+	"category" : "HTML-CSS-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSSPaddingFormatterTest",
+	"type" : "normal"
+}

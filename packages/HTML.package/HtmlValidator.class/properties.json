@@ -1,19 +1,18 @@
 {
-	"category" : "HTML-Validator",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "tb 4/14/2006 21:59",
+	"super" : "Object",
+	"category" : "HTML-Validator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"url",
 		"document",
 		"errors",
 		"dom",
 		"content",
-		"loader" ],
+		"loader"
+	],
 	"name" : "HtmlValidator",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

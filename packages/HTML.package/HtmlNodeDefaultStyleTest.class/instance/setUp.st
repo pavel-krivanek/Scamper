@@ -1,5 +1,5 @@
 accessing
 setUp
-	self timeout: 300.
+	self timeLimit: 60 seconds.
 	self htmlFormatter: DHtmlFormatter new.
 	self styleResolver: CSSStyleResolver new

@@ -1,19 +1,18 @@
 {
-	"category" : "Scamper-HTML-Morphs",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "Scamper-HTML-Morphs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"node",
 		"children",
 		"backgroundImage",
 		"processedBackgroundImage",
 		"computedWidth",
-		"suppressLayoutUpdates" ],
+		"suppressLayoutUpdates"
+	],
 	"name" : "HtmlBlockMorph",
-	"pools" : [
-		 ],
-	"super" : "Morph",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -9,6 +9,6 @@ tabPane
 	tabPaneVariable addMorphBack: (self
 		simpleIconicButtonNamed: 'new Tab' translated
 		action: #openNewTab 
-		withIcon:  ((ImageReadWriter formFromFileNamed:  (FileDirectory uri: self iconNewTab) fullName))).	
+		withIcon:  ((ImageReadWriter formFromFileNamed: self iconNewTab asFileReference))).	
 	
 	^ tabPaneVariable.

@@ -1,19 +1,18 @@
 {
-	"category" : "HTML-DOM",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "HtmlDOMNode",
+	"category" : "HTML-DOM",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"docType",
 		"content",
 		"requestUrl",
 		"responseUrl",
 		"dtdIsImplied",
-		"loader" ],
+		"loader"
+	],
 	"name" : "HtmlDocument",
-	"pools" : [
-		 ],
-	"super" : "HtmlDOMNode",
-	"type" : "normal" }
+	"type" : "normal"
+}
