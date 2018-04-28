@@ -1,6 +1,6 @@
 testing
-test01TakeScreenshotOfGoogleOpenedInScamper
-	
+blubTest01TakeScreenshotOfGoogleOpenedInScamper
+	| scamper |
 	<timeout:20>
 	(scamper model jumpToAbsoluteUrlAsync: ('http://google.de/')) wait.
 	scamper owner runStepMethods.
