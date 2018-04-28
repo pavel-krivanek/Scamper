@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "fbs 5/17/2013 18:23",
+	"super" : "Object",
+	"category" : "ScamperCompat",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"onError",
+		"value",
+		"resolvers",
+		"mutex",
+		"state",
+		"error",
+		"rejectors",
+		"rejecters"
+	],
+	"name" : "Promise",
+	"type" : "normal"
+}
