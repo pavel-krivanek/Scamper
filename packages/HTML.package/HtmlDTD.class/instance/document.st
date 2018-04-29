@@ -4,4 +4,4 @@ document
 
 	^ document isNil 
 		ifFalse: [document]
-		ifTrue: [url isNil ifFalse: [document := url asUrl retrieveContents] ifTrue: [nil]] 
+		ifTrue: [url isNil ifFalse: [document := url asZnUrl retrieveContents] ifTrue: [nil]] 

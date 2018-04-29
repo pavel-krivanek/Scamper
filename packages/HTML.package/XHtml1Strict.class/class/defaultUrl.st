@@ -1,4 +1,4 @@
 accessing
 defaultUrl
 
-	^'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd' asUrl
+	^'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd' asZnUrl

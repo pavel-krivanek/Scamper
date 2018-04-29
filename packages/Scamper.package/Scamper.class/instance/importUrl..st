@@ -6,7 +6,7 @@ importUrl: aFile
 		ifTrue:[ self error: 'not url file' translated]
 		ifFalse:[ strings := (oldFile contentsOfEntireFile) substrings.
 				strings do:[:sub |
-				( sub includesSubString: 'URL=')
+				( sub includesSubstring: 'URL=')
 					ifTrue:[ position := sub findString: 'http://'.
 							position > 0 ifTrue:[url := sub copyFrom: position to: sub size]
 										ifFalse:[ position := sub findString: 'ftp://'.
@@ -16,4 +16,4 @@ importUrl: aFile
 					].
 				]. 
 	url =='' ifTrue:[ self error: 'blank file: url not exist' translated].
-	^url asUrl
+	^url asZnUrl

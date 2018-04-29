@@ -25,9 +25,11 @@ urlEditPane
 								labelInfo: #status.
 		
 	pane 	
-		addMorph: paneURL fullFrame: ( LayoutFrame 
-					fractions: (5@0 corner: 1@1)
-					offsets: (60@0 corner: 0@0));
+		addMorph: paneURL fullFrame: (	(LayoutFrame identity
+			leftFraction: 5;
+			rightFraction: 1;
+			bottomFraction: 1;
+			leftOffset: 60));
 		addTransparentSpacerOfSize: 5 @ 0;
 		addMorph: (self 
 					simpleIconicButtonNamed: 'Home' translated

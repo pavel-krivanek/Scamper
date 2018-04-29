@@ -1,6 +1,6 @@
 testing
-blubTest01TakeScreenshotOfGoogleOpenedInScamper
-	| scamper |
+test01TakeScreenshotOfGoogleOpenedInScamper
+	
 	<timeout:20>
 	(scamper model jumpToAbsoluteUrlAsync: ('http://google.de/')) wait.
 	scamper owner runStepMethods.
@@ -9,5 +9,5 @@ blubTest01TakeScreenshotOfGoogleOpenedInScamper
 	scamper owner runStepMethods.
 	scamper model status = 'done.' ifTrue: 
 		[ self saveScreenshotOf: scamper toFile: 'scamper.png' ].
-	scamper ifNotNilDo: [ :s | s delete ].
+	scamper ifNotNil: [ :s | s delete ].
 	self assert: true

@@ -1,12 +1,12 @@
 as yet unclassified
 test09newTab
 	| a b |
-	(scamper model jumpToUrlAsync: 'http://www.google.de' asUrl) wait.
+	(scamper model jumpToUrlAsync: 'http://www.google.de' asZnUrl) wait.
 	scamper owner runStepMethods.
 	a:= scamper model document.
 	scamper model openNewTab.
 	
-	(scamper model jumpToUrlAsync: 'browser:about' asUrl) wait.
+	(scamper model jumpToUrlAsync: 'browser:about' asZnUrl) wait.
 	scamper owner runStepMethods.
 	b:= scamper model document.
 

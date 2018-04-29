@@ -10,7 +10,7 @@ setNoImageContents
 	stringMorph position: self position+(2@2).
 	self addMorph: stringMorph.
 
-	outlineMorph := RectangleMorph new.
+	outlineMorph := BorderedMorph new.
 	outlineMorph borderWidth: 1.
 	outlineMorph color: Color transparent.
 	outlineMorph position: self position.

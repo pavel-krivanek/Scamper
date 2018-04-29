@@ -10,7 +10,7 @@ queueUrl: anUrl
 		request := HTTPLoader httpRequestClass for: absoluteUrl in: loader.
 		loader addRequest: request.
 		request"
-		[absoluteUrl asUrl retrieveContents]
+		[absoluteUrl asZnUrl retrieveContents]
 		on: Error
 		do: ['']
 	]	

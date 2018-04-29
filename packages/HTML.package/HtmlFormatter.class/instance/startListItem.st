@@ -6,7 +6,7 @@ startListItem
 	listStyleTypes last = 'none' ifTrue: [ ^self ].
 	listTypes last = #unordered
 		ifTrue: [| bulletPoint|
-				bulletPoint := RectangleMorph new.
+				bulletPoint := BorderedMorph new.
 				bulletPoint
 					extent: 8@8;
 					color: Color black;

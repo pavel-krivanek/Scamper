@@ -3,7 +3,7 @@ test08addBookmark
 
 	scamper model clearBookmark. 
 	
-	(scamper model jumpToUrlAsync: ('http://www.google.de' asUrl)) wait.
+	(scamper model jumpToUrlAsync: ('http://www.google.de' asZnUrl)) wait.
 	scamper owner runStepMethods.
 	scamper model addToBookmark.
 	

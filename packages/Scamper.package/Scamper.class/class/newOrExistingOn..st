@@ -3,7 +3,7 @@ newOrExistingOn: aStringOrUrl
 	| aUrl siteStr |
 	"If a Scamper is open on the same site, return its SystemWindow, else return a new Scamper."
 
-aUrl := aStringOrUrl asUrl.
+aUrl := aStringOrUrl asZnUrl.
 siteStr := aUrl schemeName, '://', aUrl authority.
 
 Smalltalk isMorphic ifTrue: [

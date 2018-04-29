@@ -1,4 +1,4 @@
 accessing
 url: aUrl
 	"set the url to download"
-	url := aUrl asUrl.
+	url := aUrl asZnUrl.

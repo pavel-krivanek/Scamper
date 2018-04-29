@@ -1,4 +1,4 @@
 instance creation
 onUrl: aStringOrUrl
 
-	^self new url: aStringOrUrl asUrl 
+	^self new url: aStringOrUrl asZnUrl 
