@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scamper-Compatibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Entities"
+	],
+	"instvars" : [ ],
+	"name" : "HtmlEntities",
+	"type" : "normal"
+}
