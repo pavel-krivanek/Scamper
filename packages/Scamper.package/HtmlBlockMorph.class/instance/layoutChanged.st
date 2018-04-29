@@ -3,4 +3,4 @@ layoutChanged
 	self suppressLayoutUpdates ifTrue: [ ^ self ].
 	
 	self adjustBoundsToSubmorphs
-		ifFalse: [ super layoutChanged ]
+		ifFalse: [ self superLayoutChanged ]
