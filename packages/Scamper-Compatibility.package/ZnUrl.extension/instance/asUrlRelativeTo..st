@@ -1,4 +1,4 @@
 *Scamper-Compatibility
 asUrlRelativeTo: url
 
-	^ self / url asZnUrl
+	^ url asZnUrl / self

@@ -9,10 +9,11 @@ downloadFromUrlAsync: aUrl withMethod: method andInputs: inputs andEncoding: enc
 	downloadWork := [	| newSource |
 		newSource := method asLowercase = 'get'
 			ifTrue: [
-					client := WebClient new.
+					(ZnEasy get: aUrl) contents.
+					"client := WebClient new.
 					client userAgent: Scamper userAgent.
 					resp := client httpGet: aUrl asString do:[:req].
-					resp content; close ]
+					resp content; close" ]
 			ifFalse:
 				[ encoding = MIMEDocument contentTypeMultipart
 					ifTrue: [ aUrl postMultipartFormArgs: inputs ]

@@ -10,6 +10,7 @@ downloadFromUrlAsync: aUrl
 		
 		"webpage"
 		(self isUrl: aUrl) ifTrue: [newSource := [self getContentFromWeb: aUrl] ifError: [ :msg :ctx |
+				msg logCr.
 		MIMEDocument contentType: 'text/plain' content: msg ]. handled := true.].
 		"intern site"
 		(self isInternBrowserUrl: aUrl) ifTrue: [newSource := [ aUrl getlocalContentsforBrowser: self ] ifError: [ :msg :ctx |
