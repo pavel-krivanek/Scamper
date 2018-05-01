@@ -1,5 +1,12 @@
 Scamper Web Browser [![Build Status](https://travis-ci.org/hpi-swa-teaching/Scamper.svg?branch=master)](https://travis-ci.org/hpi-swa-teaching/Scamper)
 ===================
 
-###Screenshot after last feature was added
-![screenshot](https://raw.githubusercontent.com/hpi-swa-teaching/Scamper/master/tests/scamper.png)
+### How to load
+
+```
+Metacello new
+Metacello new
+  baseline: 'Scamper';
+  repository: 'github://pavel-krivanek/Scamper:pharo/packages';
+  load.
+```
