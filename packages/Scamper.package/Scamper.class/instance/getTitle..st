@@ -8,4 +8,7 @@ getTitle: aHTMLDocument
   rightOffset := 1.
   a := document asString findString: '<title>'.
   b := document asString findString: '</title>'.
-  ^document asString copyFrom: (a+leftOffset) to: (b-rightOffset).
+  ^ (a = b) 
+		ifFalse: [ document asString copyFrom: (a+leftOffset) to: (b-rightOffset) ]
+		ifTrue: [ 'untitled' ]
+	
