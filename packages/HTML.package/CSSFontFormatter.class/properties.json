@@ -3,11 +3,11 @@
 	"super" : "CSSFormatter",
 	"category" : "HTML-Formatter",
 	"classinstvars" : [
-		"fontsInstalled",
-		"fontSizeFactorMap"
-	],
-	"pools" : [ ],
-	"classvars" : [ ],
+		"numberOfInstalledFonts",
+		"fontSizeFactorMap" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
 	"instvars" : [
 		"fontMap"
 	],
