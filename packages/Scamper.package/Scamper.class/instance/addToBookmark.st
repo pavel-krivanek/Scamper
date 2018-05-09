@@ -2,7 +2,7 @@ menus
 addToBookmark
 
 	| key value file filename |
-	
+
 	key := (self getTitle: document) ifNil: ['Untitled' translated].
 	value := self currentUrl.
 	filename := key,'.lin'.
