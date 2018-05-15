@@ -3,21 +3,12 @@ urlEditPane
 	"Create and return the URL edit pane."
 
 	| pane paneUI paneURL |
-	pane := (AlignmentMorph new)
-				hResizing: #spaceFill;
-				color: (Color r:1 g:1 b:1).
+	pane := AlignmentMorph new color: (Color r:1 g:1 b:1).
 				
-	
-	paneURL := (PluggableTextMorph on: self text: #currentUrl accept: #jumpToAbsoluteUrlAsync:)
-				height: 10;
-				vResizing: #rigid.
+	paneURL := (PluggableTextMorph on: self text: #currentUrl accept: #jumpToAbsoluteUrlAsync:).
 				
 	paneUI := (AlignmentMorph new)
-				borderWidth: 0;
-				layoutInset: 0;
-				position: 1 @ 1;
-				color: (Color r:0.1 g:1 b:1);
-				addTransparentSpacerOfSize: 5 @ 0.
+				color: (Color r:0.1 g:1 b:1).
 				
 	reloadAndStopButton := (ScamperButton new)
 								selfChangeAction: #reload 
@@ -25,12 +16,8 @@ urlEditPane
 								labelInfo: #status.
 		
 	pane 	
-		addMorph: paneURL fullFrame: (	(LayoutFrame identity
-			leftFraction: 5;
-			rightFraction: 1;
-			bottomFraction: 1;
-			leftOffset: 60));
-		addTransparentSpacerOfSize: 5 @ 0;
+		addMorph: paneURL fullFrame: LayoutFrame identity;
+
 		addMorph: (self 
 					simpleIconicButtonNamed: 'Home' translated
 					action: #visitStartPage
@@ -55,7 +42,7 @@ urlEditPane
 					withIcon:  (ImageReadWriter formFromFileNamed: self iconOptions asFileReference)).
 					
 	paneURL acceptOnCR: true.
-	paneURL hideScrollBarsIndefinitely.
-	
+"	paneURL hideScrollBarsIndefinitely.
+"	
 	^ pane. 
 		

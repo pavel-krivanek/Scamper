@@ -8,10 +8,13 @@ morphicWindow
 		width: 800;
 		height: 600;
 		setProperty: #webBrowserView toValue: true;
-		addMorph: self urlEditPane frame: (0@0.01 extent: 1@0.07);		"URL edit pane and buttons"
-		addMorph: self tabPane frame: (0@0.12 extent: 1@ 0.08);
-		addMorph: self webContentsPane frame: (0@0.21 extent: 1@0.78);	"The web page pane"
-		addMorph: self statusPane frame: (0@0.93extent: 1.0@0.06).		"Status pane"
+		"URL edit pane and buttons"
+		addMorph: self urlEditPane fullFrame: ((LayoutFrame identity bottomFraction: 0; bottomOffset: 60));		
+		addMorph: self tabPane fullFrame: ((LayoutFrame identity bottomFraction: 0; topOffset: 60; bottomOffset: 100));
+		"The web page pane"
+		addMorph: self webContentsPane fullFrame: ((LayoutFrame identity topOffset: 100; bottomOffset: -20));	 
+		"Status pane"	
+		addMorph: self statusPane fullFrame: ((LayoutFrame identity topFraction: 1; topOffset: -20)).		
 	
 	self initializeTabs.
 	
