@@ -18,6 +18,7 @@
 		"documentQueue",
 		"recentDocuments",
 		"currentUrlIndex",
+		"bookmarks",
 		"bookDir",
 		"webPageMorph",
 		"sessionCookies",

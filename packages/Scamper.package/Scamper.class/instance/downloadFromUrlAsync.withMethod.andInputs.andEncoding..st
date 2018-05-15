@@ -2,14 +2,19 @@ changing page
 downloadFromUrlAsync: aUrl withMethod: method andInputs: inputs andEncoding: encoding
 	"Submit the given form with the provided inputs, url, method, and encoding"
 
-	| promise downloadWork client resp|
-	
+	| promise downloadWork client resp urlWithArgs|
 	promise := Promise new.
 	
 	downloadWork := [	| newSource |
 		newSource := method asLowercase = 'get'
 			ifTrue: [
-					(ZnEasy get: aUrl) contents.
+					urlWithArgs := (aUrl downloadUrl), '?'.
+					"build url with input"
+					inputs keysAndValuesDo: [:k :v |
+						urlWithArgs := (((urlWithArgs , k ) , '='), v asArray first).
+						urlWithArgs := urlWithArgs , '&'.
+						].
+					(ZnEasy get: urlWithArgs) contents.
 					"client := WebClient new.
 					client userAgent: Scamper userAgent.
 					resp := client httpGet: aUrl asString do:[:req].

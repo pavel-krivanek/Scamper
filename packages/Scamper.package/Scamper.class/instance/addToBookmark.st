@@ -11,5 +11,5 @@ addToBookmark
 	file ifNil:[self error: 'could not save file' translated].
 	file nextPutAll: value asString. 
 	file close.
-	bookmarks add: (Association key: key value: value).
+	self bookmarks add: (Association key: key value: value).
 	

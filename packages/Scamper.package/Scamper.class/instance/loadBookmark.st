@@ -5,9 +5,10 @@ loadBookmark
 	directory := FileDirectory uri: 'Scamper'.
 	"directory := FileDirectory default."
 	(directory directoryExists: favorite)
-			ifTrue:[self bookDir: (directory directoryNamed: favorite).
-					self bookmark: (self makeBookmark: self bookDir)]
+			ifTrue:[bookDir := directory directoryNamed: favorite.
+					self bookmarks: (self makeBookmark: bookDir)
+					]
 			ifFalse:[directory createDirectory: favorite.
-					self bookDir: (directory directoryNamed: favorite).
-					self bookmark: Dictionary new ].
-"	
+					bookDir := directory directoryNamed: favorite.
+					self bookmarks: Dictionary new ].
+	

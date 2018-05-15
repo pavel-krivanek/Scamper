@@ -11,7 +11,7 @@ bookmark
 		selector: #addToBookmark.
 	menu add: 'Import...' translated target: self selector: #importBookmark. 
 	menu addLine.
-	bookmarks
+	self bookmarks
 		keysAndValuesDo: 
 			[:name :value | 
 			url := value.
