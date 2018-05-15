@@ -10,7 +10,8 @@ getContentFromWeb: aUrl
 	
 	self storeCookies: client cookies.	
 	content:= resp content."
-	aContent := (ZnEasy get: aUrl) contents.
+	"aContent := (ZnEasy get: aUrl) contents."
+	aContent := (client get: aUrl) contents.
 
 	contentType := MIMEDocument guessTypeFromName: aUrl.
 	contentType ifNil: [ contentType := 'text/html' ].

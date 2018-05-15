@@ -14,7 +14,8 @@ downloadFromUrlAsync: aUrl withMethod: method andInputs: inputs andEncoding: enc
 						urlWithArgs := (((urlWithArgs , k ) , '='), v asArray first).
 						urlWithArgs := urlWithArgs , '&'.
 						].
-					(ZnEasy get: urlWithArgs) contents.
+					client := ZnClient new.
+					(client get: urlWithArgs) contents.
 					"client := WebClient new.
 					client userAgent: Scamper userAgent.
 					resp := client httpGet: aUrl asString do:[:req].
