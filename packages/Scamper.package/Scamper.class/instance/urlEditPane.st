@@ -42,7 +42,7 @@ urlEditPane
 					withIcon:  (ImageReadWriter formFromFileNamed: self iconOptions asFileReference)).
 					
 	paneURL acceptOnCR: true.
-"	paneURL hideScrollBarsIndefinitely.
-"	
+	paneURL hideScrollBarsIndefinitely.
+	
 	^ pane. 
 		
