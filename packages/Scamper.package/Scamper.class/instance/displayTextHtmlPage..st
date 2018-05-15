@@ -5,7 +5,7 @@ displayTextHtmlPage: newSource
 	currentUrl := newSource url.
 	"utf8mode := UTF8TextConverter strictUtf8Conversions.
 	UTF8TextConverter strictUtf8Conversions: false."
-	pageSource := newSource content
+	pageSource := newSource content.
 	self status: 'parsing...' translated.
 	document := (HtmlDocument new parseContents: (ReadStream on: pageSource)).
 	document

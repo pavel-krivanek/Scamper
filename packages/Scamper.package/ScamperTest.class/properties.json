@@ -1,9 +1,4 @@
 {
-	"category" : "Scamper-Tests",
-	"classinstvars" : [
-		"scamper" ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
 	"super" : "TestCase",
 	"category" : "Scamper-Tests",

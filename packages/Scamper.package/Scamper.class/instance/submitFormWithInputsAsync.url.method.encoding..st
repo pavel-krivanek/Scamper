@@ -9,7 +9,7 @@ submitFormWithInputsAsync: inputs url: url method: method encoding: encoding
 			[ self inform: ('unknown FORM method: {1}' translated format: {method}).
 			^ false ].
 	newUrl := url asUrlRelativeTo: currentUrl.
-	(newUrl schemeName ~= 'http' and: [newUrl schemeName ~= 'https'])
+	(newUrl scheme ~= 'http' and: [newUrl scheme ~= 'https'])
 		ifTrue:
 			[ self inform: 'I can only submit forms via HTTP/S' translated.
 			^ false ].
@@ -17,6 +17,6 @@ submitFormWithInputsAsync: inputs url: url method: method encoding: encoding
 	self addNextToRecentDocuments.
 	
 	^ (self downloadFromUrlAsync: newUrl withMethod: method andInputs: inputs andEncoding: encoding)
-		then: [ :document |
-			WorldState addDeferredUIMessage: [ self processDocument: (MIMEDocument contentType: 'text/html' content: (document content) url: newUrl)].
+		then: [ :aDocument |
+			WorldState addDeferredUIMessage: [ self processDocument: (MIMEDocument contentType: 'text/html' content: (aDocument content) url: newUrl)].
 			self ]

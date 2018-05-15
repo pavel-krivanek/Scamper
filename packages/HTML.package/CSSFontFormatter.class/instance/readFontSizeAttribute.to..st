@@ -5,8 +5,8 @@ readFontSizeAttribute: aString to: aContext
 	parentFontSize := (self parentResolver value: #size) ifNil: [ defaultSize ].
 	
 	self isRelativeSize: aString
-		ifTrue: [aContext at: #size put: 
-					(self relativeSizeToPx: aString parentAndDefaultSize: parentFontSize).
+		ifTrue: ["aContext at: #size put: 
+					(self relativeSizeToPx: aString parentAndDefaultSize: parentFontSize)."
 				^self].	
 	
 	self isAbsoluteSize: aString

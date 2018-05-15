@@ -22,7 +22,7 @@ downloadFromUrlAsync: aUrl withMethod: method andInputs: inputs andEncoding: enc
 			ifFalse:
 				[ encoding = MIMEDocument contentTypeMultipart
 					ifTrue: [ aUrl postMultipartFormArgs: inputs ]
-					ifFalse: [ aUrl postFormArgs: inputs ] ].
+					ifFalse: [ aUrl queryAddAll: inputs. aUrl ] ].
 
 		downloadingProcess := nil.
 		promise resolveWith: newSource ].

@@ -4,10 +4,10 @@
 	"category" : "HTML-Formatter",
 	"classinstvars" : [
 		"numberOfInstalledFonts",
-		"fontSizeFactorMap" ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
+		"fontSizeFactorMap"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"fontMap"
 	],
