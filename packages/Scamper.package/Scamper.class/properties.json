@@ -31,7 +31,8 @@
 		"tabPaneVariable",
 		"currentTab",
 		"optionsPanel",
-		"searchEngineUrl" ],
+		"searchEngineUrl"
+	],
 	"name" : "Scamper",
 	"type" : "normal"
 }
