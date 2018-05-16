@@ -30,7 +30,7 @@
 		"reloadAndStopButton",
 		"tabPaneVariable",
 		"currentTab",
-		"optionsPanel"
+		"optionsPanel",
 		"searchEngineUrl" ],
 	"name" : "Scamper",
 	"type" : "normal"
