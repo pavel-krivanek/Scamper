@@ -11,7 +11,7 @@ jumpToAbsoluteUrlAsync: urlText
 		newUrl := (self searchEngineUrl , queryString ) asUrl]
 	ifFalse: [
 		"get the new url"
-		newUrl := urlText asUrl.
+		newUrl := urlText asUrl].
 
 	"get the new url"
 	newUrl := urlText asString asZnUrl.
