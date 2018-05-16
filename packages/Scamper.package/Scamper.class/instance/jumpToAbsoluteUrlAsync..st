@@ -1,10 +1,17 @@
 changing page
 jumpToAbsoluteUrlAsync: urlText
-	"start downloading a new page.  The page source is downloaded in a background thread"
-	
-	| newUrl |
+	"start downloading a new page.  The page source is downloaded in a background thread. 
+	If urlText is no Url, emulate search bar behaviour and google the input"
+	|  newUrl queryString |
 
 	self stopEverything.
+	(self isSearchWords: urlText) 
+	ifTrue: [
+		queryString := '?' ,  (self makeQueryArg: urlText key: 'q').
+		newUrl := (self searchEngineUrl , queryString ) asUrl]
+	ifFalse: [
+		"get the new url"
+		newUrl := urlText asUrl.
 
 	"get the new url"
 	newUrl := urlText asString asZnUrl.

@@ -8,17 +8,18 @@ downloadFromUrlAsync: aUrl withMethod: method andInputs: inputs andEncoding: enc
 	downloadWork := [	| newSource |
 		newSource := method asLowercase = 'get'
 			ifTrue: [
-					urlWithArgs := (aUrl downloadUrl), '?'.
+					urlWithArgs := (aUrl downloadUrl) asText.
+					urlWithArgs append: '?'.
 					"build url with input"
 					inputs keysAndValuesDo: [:k :v |
-						urlWithArgs := (((urlWithArgs , k ) , '='), v asArray first).
-						urlWithArgs := urlWithArgs , '&'.
+						urlWithArgs append: (self makeQueryArg: (v asArray first) key: k ).
+						urlWithArgs append: '&'.
 						].
 					client := ZnClient new.
 					(client get: urlWithArgs) contents.
 					"client := WebClient new.
 					client userAgent: Scamper userAgent.
-					resp := client httpGet: aUrl asString do:[:req].
+					resp := client httpGet: urlWithArgs asString.
 					resp content; close" ]
 			ifFalse:
 				[ encoding = MIMEDocument contentTypeMultipart
