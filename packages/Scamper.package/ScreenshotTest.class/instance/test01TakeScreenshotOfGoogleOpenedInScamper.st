@@ -11,3 +11,4 @@ test01TakeScreenshotOfGoogleOpenedInScamper
 		[ self saveScreenshotOf: scamper toFile: 'scamper.png' ].
 	scamper ifNotNil: [ :s | s delete ].
 	self assert: true
+"
