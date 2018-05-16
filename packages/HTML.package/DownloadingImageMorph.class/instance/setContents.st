@@ -8,7 +8,7 @@ setContents
 
 	defaultExtent isNil
 		ifTrue: [(imageMorph := ImageMorph new) image: image]
-		ifFalse: [imageMorph := SketchMorph withForm: image].
+		ifFalse: [imageMorph := ImageMorph withForm: image].
 
 	imageMorph position: self position.
 	self addMorph: imageMorph.
