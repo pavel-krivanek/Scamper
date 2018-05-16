@@ -7,11 +7,11 @@ jumpToAbsoluteUrlAsync: urlText
 	self stopEverything.
 	(self isSearchWords: urlText) 
 	ifTrue: [
-		queryString := '?' ,  (self makeQueryArg: urlText key: 'q').
+		queryString := '?' ,  (self makeQueryArg: urlText asString key: 'q').
 		newUrl := (self searchEngineUrl , queryString ) asUrl]
 	ifFalse: [
 		"get the new url"
-		newUrl := urlText asUrl].
+		newUrl := urlText asString asUrl].
 
 	"get the new url"
 	newUrl := urlText asString asZnUrl.
