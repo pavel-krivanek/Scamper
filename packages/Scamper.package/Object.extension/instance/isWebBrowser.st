@@ -1,0 +1,4 @@
+*Scamper
+isWebBrowser
+
+	^ false
