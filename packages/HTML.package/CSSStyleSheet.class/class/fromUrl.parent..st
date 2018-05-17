@@ -7,22 +7,22 @@ fromUrl: aStringOrUrl parent: aDOMNode
 	((href beginsWith: 'http:') or: [(href beginsWith: 'https:') or:[href beginsWith: 'ftp:']]) 
 	ifFalse:
 	[
-		url := (Url combine: aDOMNode document responseUrl asString withRelative: href).
+		url := (ZnUrl combine: aDOMNode document responseUrl asString withRelative: href).
 	]
 	ifTrue: [url := href].
 
-	doc := HTTPSocket httpGetDocument: url args: nil accept: 'text/css' request: ''.
+	"doc := HttpSocket httpGetDocument: url args: nil accept: 'text/css' request: ''."
+	doc := ZnEasy get: url.
 	^doc isString ifFalse: "life is good"
 	[
 		self new 
-			content: doc content; 
-			start: 0; end: doc content size; 
+			content: doc contents; 
+			start: 0; end: doc contents size; 
 			parent: aDOMNode; 
 			url: url;
-			parseContents: (ReadStream on: doc content)		
+			parseContents: (ReadStream on: doc contents)		
 	]
 	ifTrue:
 	[
 		nil
 	]
-
