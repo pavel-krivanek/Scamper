@@ -8,12 +8,12 @@ downloadFromUrlAsync: aUrl withMethod: method andInputs: inputs andEncoding: enc
 	downloadWork := [	| newSource |
 		newSource := method asLowercase = 'get'
 			ifTrue: [
-					urlWithArgs := (aUrl downloadUrl) asText.
-					urlWithArgs append: '?'.
+					urlWithArgs := aUrl asString.
+					urlWithArgs := urlWithArgs, '?'.
 					"build url with input"
 					inputs keysAndValuesDo: [:k :v |
-						urlWithArgs append: (self makeQueryArg: (v asArray first) key: k ).
-						urlWithArgs append: '&'.
+						urlWithArgs := urlWithArgs, (self makeQueryArg: (v asArray first) key: k ).
+						urlWithArgs := urlWithArgs, '&'.
 						].
 					client := ZnClient new.
 					(client get: urlWithArgs) contents.
