@@ -1,6 +1,6 @@
 rendering
 flushInlineNodes: inlineNodes to: aHtmlBlockMorph
-	| formatter htmlInlineMorph |
+	| formatter htmlInlineMorph resolver |
 	inlineNodes ifNotEmpty: [
 		formatter := HtmlFormatter preferredFormatterClass new.
 		inlineNodes do: [ :node | node addToFormatter: formatter ].

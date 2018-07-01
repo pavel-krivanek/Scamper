@@ -18,7 +18,9 @@ downloadFromUrlAsync: aUrl withMethod: method andInputs: inputs andEncoding: enc
 					client := ZnClient new.
 					(client get: urlWithArgs) contents.
 					"client := WebClient new.
+
 					client userAgent: Scamper userAgent.
+					urlWithArgs := self buildUrlStringFrom: aUrl WithFormInput: inputs.
 					resp := client httpGet: urlWithArgs asString.
 					resp content; close" ]
 			ifFalse:

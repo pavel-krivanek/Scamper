@@ -9,7 +9,7 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-      #categories : [ 'Scamper' ]
+      #packages : [ 'Scamper*', 'HTML*' ]
     }
   }
 }

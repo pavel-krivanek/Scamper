@@ -1,26 +1,11 @@
-### Story
+## Story
+As a user I want...
 
-AS A
-I WANT TO
-IN ORDER TO
+## Estimation
+predicted:
 
-### Description
+actual:
 
-##### Why: (What value does it have? For whom?)
-##### What: (What should be implemented?)
-##### Done: (How can it be demonstrated?)
+## Acceptance Criteria
+-[] okok
 
-### Acceptance Criteria
-
-
-Use the part above for features, the one below for real issues.
-Delete the part you do not need.
-__________________________________________________________
-
-### Expected Behavior
-
-
-### Actual Behavior
-
-
-### Steps to reproduce error

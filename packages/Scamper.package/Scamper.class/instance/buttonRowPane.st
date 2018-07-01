@@ -30,7 +30,12 @@ buttonRowPane
 					withIcon:  ((ImageReadWriter formFromFileNamed:  (self iconCancel asFileReference))));
 		addTransparentSpacerOfSize: 5 @ 0;
 		addMorphBack: (self 
-					simpleButtonNamed: 'Tabs' translated
-					action: #showTabs
-					text: self openNewTabText).
+					simpleButtonNamed: 'Stop!' translated
+					action: #stopEverything
+					text: self stopButtonText);
+		addTransparentSpacerOfSize: 5@0;
+		addMorphBack: (self
+					simpleButtonNamed: 'Source'
+					action: #viewSource
+					text: 'View Source' ).
 	^buttonRow
