@@ -10,9 +10,9 @@ flushInlineNodes: inlineNodes to: aHtmlBlockMorph
 			aHtmlBlockMorph addChild: htmlInlineMorph ].
 		inlineNodes removeAll.
 		resolver := CSSStyleResolver for: (aHtmlBlockMorph node).
-		"resolver ifStyleNotNil: #align do: [ :align | htmlInlineMorph layoutPolicy textAlign: align ].
+		resolver ifStyleNotNil: #align do: [ :align | htmlInlineMorph layoutPolicy textAlign: align ].
 		resolver ifStyleNotNil: #float do: [ :float |
 			(float = 'left') ifTrue: [ htmlInlineMorph layoutPolicy float: #left ].
 			(float = 'right') ifTrue: [ htmlInlineMorph layoutPolicy float: #right ].
-			] "]. "TODO"
+			] ]. 
 		

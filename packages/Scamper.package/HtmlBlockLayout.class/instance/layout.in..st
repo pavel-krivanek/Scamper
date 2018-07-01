@@ -11,13 +11,13 @@ layout: aMorph in: newBounds
 	noneFloating := OrderedCollection new.
 	leftFloating := OrderedCollection new.
 	rightFloating := OrderedCollection new.
-	"aMorph submorphs do: [ :morph |
+	aMorph submorphs do: [ :morph |
 		| direction |
 		direction := morph layoutPolicy float.
 		(direction = #left) ifTrue: [ leftFloating addLast: morph ].
 		(direction = #right) ifTrue: [ rightFloating addLast: morph ].
 		(direction = #none) ifTrue: [ noneFloating addLast: morph ].
-	]." "TODO"
+	].
 	leftFloating do: [ :morph | 
 		| w h topLeft morphBounds |
 		w := morph width.
