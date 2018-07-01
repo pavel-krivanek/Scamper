@@ -12,7 +12,7 @@ getContentFromWeb: aUrl
 	content:= resp content."
 	"aContent := (ZnEasy get: aUrl) contents."
 	aContent := (client get: aUrl) contents.
-	urlAfterRedirect := resp url.
+	urlAfterRedirect := aUrl. "TODO: get redirect url"
 
 	contentType := MIMEDocument guessTypeFromName: urlAfterRedirect.
 	contentType ifNil: [ contentType := 'text/html' ].

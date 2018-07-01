@@ -32,7 +32,7 @@
 		"currentTab",
 		"optionsPanel",
 		"searchEngineUrl",
-		"menuHistory" 
+		"menuHistory"
 	],
 	"name" : "Scamper",
 	"type" : "normal"

@@ -1,16 +1,15 @@
 {
-	"category" : "Scamper-HTML-Morphs",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "LayoutPolicy",
+	"category" : "Scamper-HTML-Morphs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"margin",
 		"padding",
-		"float" ],
+		"float"
+	],
 	"name" : "HtmlBlockLayout",
-	"pools" : [
-		 ],
-	"super" : "LayoutPolicy",
-	"type" : "normal" }
+	"type" : "normal"
+}

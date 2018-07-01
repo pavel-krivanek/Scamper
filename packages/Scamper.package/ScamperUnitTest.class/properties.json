@@ -1,14 +1,13 @@
 {
-	"category" : "Scamper-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"scamper" ],
-	"name" : "ScamperUnitTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "Scamper-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scamper"
+	],
+	"name" : "ScamperUnitTest",
+	"type" : "normal"
+}
