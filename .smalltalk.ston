@@ -9,11 +9,7 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-<<<<<<< HEAD
-      #categories : [ 'Scamper' ]
-=======
       #packages : [ 'Scamper*', 'HTML*' ]
->>>>>>> up/develop
     }
   }
 }
