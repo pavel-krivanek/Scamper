@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "PluggableTextMorph",
+	"category" : "Scamper-HTML-Morphs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nodes",
+		"incompleteMorphs",
+		"acceptTarget",
+		"acceptAction"
+	],
+	"name" : "PluggableTextMorphSubmitOnEnter",
+	"type" : "normal"
+}

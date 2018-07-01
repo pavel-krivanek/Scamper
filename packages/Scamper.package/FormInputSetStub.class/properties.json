@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "FormInputSet",
+	"category" : "Scamper-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"called",
+		"submittedCount"
+	],
+	"name" : "FormInputSetStub",
+	"type" : "normal"
+}

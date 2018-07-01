@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CSSStyleRule",
+	"category" : "HTML-CSS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSSDefaultStyleRule",
+	"type" : "normal"
+}
