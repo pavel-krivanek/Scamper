@@ -12,5 +12,9 @@ initialize
 	sessionCookies := OrderedCollection new.
 	LongtimeCookies := OrderedCollection new.
 	pageSource := ''.
+<<<<<<< HEAD
 	self status: 'sittin' translated.
 	
+=======
+	self status: 'sittin' translated.
+>>>>>>> up/develop

@@ -4,8 +4,6 @@ displayDocument: mimeDocument
 	|  handled  urlString |
 	handled := false.
 
-	
-
 	"add it to the history"
 "	recentDocuments removeAllSuchThat: [ :d | d url = mimeDocument url ]."
 	currentUrlIndex > recentDocuments size

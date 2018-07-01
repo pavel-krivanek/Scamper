@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Story
 
 AS A
@@ -24,3 +25,16 @@ __________________________________________________________
 
 
 ### Steps to reproduce error
+=======
+## Story
+As a user I want...
+
+## Estimation
+predicted:
+
+actual:
+
+## Acceptance Criteria
+-[] okok
+
+>>>>>>> up/develop
