@@ -3,7 +3,7 @@ initialize
 	super initialize.
 	children := OrderedCollection new.
 	self processedBackgroundImage: false.
-	self layoutPolicy: HtmlBlockLayout new;
+	self layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;
 		wrapDirection: #none;
 		listCentering: #topLeft;

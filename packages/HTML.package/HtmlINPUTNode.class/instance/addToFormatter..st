@@ -14,7 +14,7 @@ addToFormatter: formatter
 	self type = 'image'
 		ifTrue: [^self addImageButtonToFormatter: formatter].
 
-	(self type = 'text' or: [self type = 'password'] or: [self type = 'search'])
+	(self type = 'text' or: [self type = 'password'])
 		ifTrue: [^self addTextInputToFormatter: formatter].
 
 	self type = 'hidden' ifTrue: [

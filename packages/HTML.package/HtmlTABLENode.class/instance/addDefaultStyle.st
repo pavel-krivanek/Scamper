@@ -4,4 +4,4 @@ addDefaultStyle
 	styles := Dictionary newFrom: {
 		'display' -> 'table'.
 	}.
-	self addStyle: (CSSDefaultStyleRule fromDictionary: styles)
+	self addStyle: (CSSStyleRule fromDictionary: styles)

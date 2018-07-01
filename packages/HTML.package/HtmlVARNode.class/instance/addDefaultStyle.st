@@ -5,4 +5,4 @@ addDefaultStyle
 		'font-style' -> 'italic'.
 		'font-family' -> 'Courier New'.
 	}.
-	self addStyle: (CSSDefaultStyleRule fromDictionary: styles)
+	self addStyle: (CSSStyleRule fromDictionary: styles)

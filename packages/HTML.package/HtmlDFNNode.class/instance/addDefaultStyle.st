@@ -5,4 +5,4 @@ addDefaultStyle
 		'font-style' -> 'italic'.
 		'font-family' -> 'Times'.
 	}.
-	self addStyle: (CSSDefaultStyleRule fromDictionary: styles)
+	self addStyle: (CSSStyleRule fromDictionary: styles)

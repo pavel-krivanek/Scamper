@@ -6,4 +6,4 @@ addDefaultStyle
 		'list-style-type' -> 'decimal'.
 		'margin' -> '1em 0'.
 	}.
-	self addStyle: (CSSDefaultStyleRule fromDictionary: styles)"
+	self addStyle: (CSSStyleRule fromDictionary: styles)"

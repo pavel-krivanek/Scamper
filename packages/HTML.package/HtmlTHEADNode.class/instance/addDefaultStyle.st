@@ -5,4 +5,4 @@ addDefaultStyle
 		'display' -> 'block'.
 		'font-weight' -> 'bold'.
 	}.
-	self addStyle: (CSSDefaultStyleRule fromDictionary: styles)
+	self addStyle: (CSSStyleRule fromDictionary: styles)

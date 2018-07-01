@@ -13,4 +13,4 @@ initialize
 	LongtimeCookies := OrderedCollection new.
 	pageSource := ''.
 	self status: 'sittin' translated.
-
+	

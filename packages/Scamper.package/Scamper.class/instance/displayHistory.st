@@ -1,13 +1,13 @@
 menus
 displayHistory
+	"Let the user select a previous page to view."
 
-	"Let the user selecet a previous page to view."
-	
-	menuHistory := MenuMorph entitled: 'Recent URLs' translated.
-	menuHistory defaultTarget: self;
-				  addStayUpItem;
-				  addLine.
+	| menu |
+	menu := MenuMorph entitled: 'Recent URLs' translated.
+	menu defaultTarget: self.
+	menu addStayUpItem.
+	menu addLine.
 	recentDocuments reverseDo:
 		[:doc |
-		menuHistory add: doc url asString selector: #displayDocument: argument: doc].
-	menuHistory popUpInWorld: self currentWorld
+		menu add: doc url asString selector: #displayDocument: argument: doc].
+	menu popUpInWorld: self currentWorld

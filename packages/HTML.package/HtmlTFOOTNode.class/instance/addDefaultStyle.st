@@ -5,4 +5,4 @@ addDefaultStyle
 		'display' -> 'block'.
 		'font-style' -> 'italic'.
 	}.
-	self addStyle: (CSSDefaultStyleRule fromDictionary: styles)
+	self addStyle: (CSSStyleRule fromDictionary: styles)
