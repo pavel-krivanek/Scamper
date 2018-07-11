@@ -6,10 +6,13 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"textAlign",
 		"margin",
 		"padding",
 		"float"
 	],
 	"name" : "HtmlBlockLayout",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "HtmlLayoutPolicy",
+	"type" : "normal" }

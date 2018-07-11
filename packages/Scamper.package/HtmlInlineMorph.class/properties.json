@@ -7,8 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"nodes",
-		"incompleteMorphs"
-	],
+		"incompleteMorphs",
+		"layoutStyles" ],
+
 	"name" : "HtmlInlineMorph",
 	"type" : "normal"
 }

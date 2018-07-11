@@ -1,6 +1,7 @@
 rendering
 flushInlineNodes: inlineNodes to: aHtmlBlockMorph
-	| formatter htmlInlineMorph resolver |
+
+	| formatter htmlInlineMorph |
 	inlineNodes ifNotEmpty: [
 		formatter := HtmlFormatter preferredFormatterClass new.
 		inlineNodes do: [ :node | node addToFormatter: formatter ].
@@ -15,4 +16,5 @@ flushInlineNodes: inlineNodes to: aHtmlBlockMorph
 			(float = 'left') ifTrue: [ htmlInlineMorph layoutPolicy float: #left ].
 			(float = 'right') ifTrue: [ htmlInlineMorph layoutPolicy float: #right ].
 			] ]. 
+
 		

@@ -14,5 +14,7 @@
 		"suppressLayoutUpdates"
 	],
 	"name" : "HtmlBlockMorph",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "HtmlMorph",
+	"type" : "normal" }

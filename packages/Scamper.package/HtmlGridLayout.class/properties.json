@@ -6,9 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"textAlign",
 		"columns",
 		"rows"
 	],
 	"name" : "HtmlGridLayout",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "HtmlLayoutPolicy",
+	"type" : "normal" }
