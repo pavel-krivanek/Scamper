@@ -1,7 +1,6 @@
 document handling
 displayTextHtmlPage: newSource
 	"HTML page--format it"
-	| utf8mode |
 	currentUrl := newSource url.
 	"utf8mode := UTF8TextConverter strictUtf8Conversions.
 	UTF8TextConverter strictUtf8Conversions: false."

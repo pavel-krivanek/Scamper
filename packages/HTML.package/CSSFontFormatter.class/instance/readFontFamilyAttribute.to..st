@@ -5,3 +5,4 @@ readFontFamilyAttribute: aString to: aContext
 	(aString splitOn: ',') reversed
 		do: [:family | (self styleForFamily: family) ifNotNil: [:s | style := s]].
 	aContext at: #family put: style.
+
