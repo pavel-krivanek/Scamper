@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "LayoutPolicy",
+	"super" : "HtmlLayoutPolicy",
 	"category" : "Scamper-HTML-Morphs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -12,7 +12,5 @@
 		"float"
 	],
 	"name" : "HtmlBlockLayout",
-	"pools" : [
-		 ],
-	"super" : "HtmlLayoutPolicy",
-	"type" : "normal" }
+	"type" : "normal"
+}

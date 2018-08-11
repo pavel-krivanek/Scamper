@@ -1,3 +1,0 @@
-*scamper-tests
-model
-	^ model

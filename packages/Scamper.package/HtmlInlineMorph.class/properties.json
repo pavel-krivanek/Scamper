@@ -8,8 +8,8 @@
 	"instvars" : [
 		"nodes",
 		"incompleteMorphs",
-		"layoutStyles" ],
-
+		"layoutStyles"
+	],
 	"name" : "HtmlInlineMorph",
 	"type" : "normal"
 }

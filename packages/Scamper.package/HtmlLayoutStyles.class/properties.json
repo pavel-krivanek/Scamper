@@ -1,10 +1,10 @@
 {
-	"category" : "Scamper-HTML-Morphs",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scamper-HTML-Morphs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"width",
 		"height",
@@ -23,9 +23,8 @@
 		"borderColor",
 		"float",
 		"textAlign",
-		"htmlMorph" ],
+		"htmlMorph"
+	],
 	"name" : "HtmlLayoutStyles",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

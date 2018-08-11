@@ -1,14 +1,14 @@
 layout
 layout: aMorph in: newBounds
 
-"
-	(self textAlign = #centered) ifTrue: [ aMorph editor applyAttribute: (TextAlignment centered). ].
-	(self textAlign = #left) ifTrue: [ aMorph editor applyAttribute: (TextAlignment leftFlush). ].
-	(self textAlign = #right) ifTrue: [ aMorph editor applyAttribute: (TextAlignment leftFlush). ].
-"
+
+	(aMorph layoutStyles textAlign = #centered) ifTrue: [ aMorph editor applyAttribute: (TextAlignment centered). ].
+	(aMorph layoutStyles textAlign = #left) ifTrue: [ aMorph editor applyAttribute: (TextAlignment leftFlush). ].
+	(aMorph layoutStyles textAlign = #right) ifTrue: [ aMorph editor applyAttribute: (TextAlignment leftFlush). ].
+
 		
-	aMorph layoutStyles textAlign ifNotNilDo: [:alignment | aMorph perform: alignment].
-	
+"	aMorph layoutStyles textAlign ifNotNil: [:alignment | aMorph perform: alignment].
+"	
 	"code below ensures margins for inline elements but breaks forms and leads to big display problems (e.g. when googling something)"
 	
 	"contentOrigin := newBounds origin asIntegerPoint.

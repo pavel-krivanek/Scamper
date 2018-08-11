@@ -1,14 +1,11 @@
 {
-	"category" : "Scamper-HTML-Morphs",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "HtmlLayoutPolicy",
-	"pools" : [
-		 ],
 	"super" : "LayoutPolicy",
-	"type" : "normal" }
+	"category" : "Scamper-HTML-Morphs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HtmlLayoutPolicy",
+	"type" : "normal"
+}

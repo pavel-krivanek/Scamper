@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Morph",
+	"super" : "HtmlMorph",
 	"category" : "Scamper-HTML-Morphs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -14,7 +14,5 @@
 		"suppressLayoutUpdates"
 	],
 	"name" : "HtmlBlockMorph",
-	"pools" : [
-		 ],
-	"super" : "HtmlMorph",
-	"type" : "normal" }
+	"type" : "normal"
+}
