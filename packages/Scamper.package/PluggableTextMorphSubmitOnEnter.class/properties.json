@@ -8,8 +8,7 @@
 	"instvars" : [
 		"nodes",
 		"incompleteMorphs",
-		"acceptTarget",
-		"acceptAction"
+		"acceptTarget"
 	],
 	"name" : "PluggableTextMorphSubmitOnEnter",
 	"type" : "normal"
