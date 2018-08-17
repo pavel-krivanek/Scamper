@@ -5,11 +5,6 @@ Class {
 }
 
 { #category : #accessing }
-HtmlHEADNode >> addToFormatter: aFormatter [
-	"Do nothing"
-]
-
-{ #category : #accessing }
 HtmlHEADNode >> tag [
 	^ 'head'
 ]

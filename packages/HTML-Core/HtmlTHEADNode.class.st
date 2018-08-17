@@ -14,13 +14,6 @@ HtmlTHEADNode >> addDefaultStyle [
 	self addStyle: (CSSDefaultStyleRule fromDictionary: styles)
 ]
 
-{ #category : #rendering }
-HtmlTHEADNode >> addToHtmlMorph: aHtmlTableMorph [
-	self children do: [ :ea |
-		ea addToHtmlMorph: aHtmlTableMorph.
-	]
-]
-
 { #category : #accessing }
 HtmlTHEADNode >> tag [
 	^ 'thead'

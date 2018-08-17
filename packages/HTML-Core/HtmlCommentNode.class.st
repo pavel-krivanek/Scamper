@@ -4,11 +4,6 @@ Class {
 	#category : #'HTML-Core-DOM'
 }
 
-{ #category : #parsing }
-HtmlCommentNode >> addToFormatter: aFormatter [
-	"Do nothing - it's a comment!"
-]
-
 { #category : #testing }
 HtmlCommentNode >> isComment [
 

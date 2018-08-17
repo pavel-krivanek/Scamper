@@ -4,11 +4,6 @@ Class {
 	#category : #'HTML-Core-DOM'
 }
 
-{ #category : #rendering }
-HtmlHTMLNode >> addToHtmlMorph: aHtmlBlockMorph [
-	self renderChildrenInto: aHtmlBlockMorph
-]
-
 { #category : #parsing }
 HtmlHTMLNode >> createImpliedNodes [
 

@@ -120,47 +120,6 @@ HtmlDOMNode >> addStyle: aStyleRule [
 	self styles: (self styles copyWith: aStyleRule)
 ]
 
-{ #category : #rendering }
-HtmlDOMNode >> addToFormatter: aFormatter [
-	| newBlockMorph |
-	self boxType == #inline ifTrue: [
-		self startStyles: aFormatter.
-		self children do: [:e | e addToFormatter: aFormatter ].
-		self endStyles: aFormatter ].
-	self boxType == #inlineBlock ifTrue: [
-		self startStyles: aFormatter.
-		newBlockMorph := self getHtmlBlockMorph.
-		aFormatter addMorph: newBlockMorph.
-		aFormatter incompleteMorphs addAll: newBlockMorph incompleteMorphs.
-		self endStyles: aFormatter ]
-]
-
-{ #category : #rendering }
-HtmlDOMNode >> addToHtmlMorph: aHtmlBlockMorph [	
-	aHtmlBlockMorph addChild: self getHtmlBlockMorph.
-]
-
-{ #category : #rendering }
-HtmlDOMNode >> applyComputedStylesTo: aHtmlMorph [
-
-	| resolver |
-	"can currently also be HtmlInlineMorph. HtmlInlineMorph should be refactored to also be HtmlMorph"
-	resolver := CSSStyleResolver for: self.
-	aHtmlMorph layoutStyles getComputedStylesFrom: resolver.
-	aHtmlMorph layoutStyles apply.
-	
-
-	
-	
-	
-	
-		
-	"resolver ifStyleNotNil: #float do: [ :float |
-			(float = 'left') ifTrue: [ aHtmlBlockMorph layoutPolicy float: #left ].
-			(float = 'right') ifTrue: [ aHtmlBlockMorph layoutPolicy float: #right ].
-			]."
-]
-
 { #category : #accessing }
 HtmlDOMNode >> associatedForm [
 	^ associatedForm ifNil: [ associatedForm := self parent associatedForm ]
@@ -188,12 +147,6 @@ HtmlDOMNode >> attributes: anObject [
 	id := (attributes at: 'id' ifAbsent: [nil]).
 	cstr := attributes at: 'class' ifAbsent: [nil].
 	classes := cstr isNil ifTrue: [#()] ifFalse: [cstr findTokens: ' ']
-]
-
-{ #category : #accessing }
-HtmlDOMNode >> boxType [
-
-	^ ((CSSStyleResolver for: self) getStyle: #display) ifNil: [ #inline ]
 ]
 
 { #category : #accessing }
@@ -251,11 +204,6 @@ HtmlDOMNode >> createImpliedNodes [
 	self children do:[:ea | ea createImpliedNodes]
 ]
 
-{ #category : #'initialize-release' }
-HtmlDOMNode >> defaultBlockMorph [
-	^ HtmlBlockMorph
-]
-
 { #category : #accessing }
 HtmlDOMNode >> dtd [
 
@@ -299,46 +247,6 @@ HtmlDOMNode >> endTagMissing: anObject [
 	"Set the value of endTagMissing"
 
 	endTagMissing := anObject
-]
-
-{ #category : #rendering }
-HtmlDOMNode >> flushBlockNode: blockNode to: aHtmlMorph [
-	blockNode addToHtmlMorph: aHtmlMorph.
-]
-
-{ #category : #rendering }
-HtmlDOMNode >> flushInlineNodes: inlineNodes to: aHtmlBlockMorph [
-
-	| formatter htmlInlineMorph |
-	inlineNodes ifNotEmpty: [
-		formatter := HtmlFormatter preferredFormatterClass new.
-		
-		inlineNodes do: [ :node | node addToFormatter: formatter].
-		htmlInlineMorph := formatter htmlInlineMorph.
-		inlineNodes do: [ :node | node applyComputedStylesTo: htmlInlineMorph ].
-		htmlInlineMorph text ifNotEmpty: [
-			htmlInlineMorph nodes: inlineNodes copy.
-			aHtmlBlockMorph addChild: htmlInlineMorph ].
-		inlineNodes removeAll.
-		"resolver := CSSStyleResolver for: (aHtmlBlockMorph node).
-		resolver ifStyleNotNil: #align do: [ :align | htmlInlineMorph layoutPolicy textAlign: align ].
-		resolver ifStyleNotNil: #float do: [ :float |
-			(float = 'left') ifTrue: [ htmlInlineMorph layoutPolicy float: #left ].
-			(float = 'right') ifTrue: [ htmlInlineMorph layoutPolicy float: #right ].
-			]" ]. 
-
-		
-]
-
-{ #category : #rendering }
-HtmlDOMNode >> getHtmlBlockMorph [
-
-	htmlMorph := self defaultBlockMorph newFor: self.
-	self applyComputedStylesTo: htmlMorph.
-	self renderChildrenInto: htmlMorph.
-	
-	
-	^ htmlMorph
 ]
 
 { #category : #accessing }
@@ -400,24 +308,6 @@ HtmlDOMNode >> isImplied [
 HtmlDOMNode >> isImplied: trueOrFalse [
 	
 	isImplied := trueOrFalse
-]
-
-{ #category : #accessing }
-HtmlDOMNode >> isRenderedInline [
-	
-	| boxType |
-	isRenderedInline ifNotNil: [ :value | ^ value ].
-	
-	boxType := self boxType.
-	boxType == #inlineBlock
-		ifTrue: [ ^ isRenderedInline := true ].
-
-	boxType == #inline
-		ifFalse: [ ^ isRenderedInline := false ].
-	
-	self children
-		ifEmpty: [ ^ isRenderedInline := true ]
-		ifNotEmpty: [ ^ isRenderedInline := self children allSatisfy: [ :child | child isRenderedInline ]]
 ]
 
 { #category : #accessing }
@@ -655,18 +545,6 @@ HtmlDOMNode >> recoverFromLTIn: aString stream: in [
 	].
 	s := in upTo: $>.
 	^s
-]
-
-{ #category : #rendering }
-HtmlDOMNode >> renderChildrenInto: aHtmlBlockMorph [
-	| inlineNodes |
-	
-	inlineNodes := OrderedCollection new.
-	self children do: [ :child | child isRenderedInline
-			ifTrue: [ inlineNodes add: child ]
-			ifFalse: [ self flushInlineNodes: inlineNodes to: aHtmlBlockMorph;
-						flushBlockNode: child to: aHtmlBlockMorph] ].
-	self flushInlineNodes: inlineNodes to: aHtmlBlockMorph
 ]
 
 { #category : #rendering }
