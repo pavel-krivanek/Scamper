@@ -28,13 +28,6 @@ DHtmlFormatter >> endFont: aFont [
 ]
 
 { #category : #'formatting commands' }
-DHtmlFormatter >> endHeader: level [
-	boldLevel := boldLevel - 1. "self decreaseBold"
-	self ensureNewlines: 2.
-	self endFont: nil.
-]
-
-{ #category : #'formatting commands' }
 DHtmlFormatter >> endStyles [
 	self endFont: nil
 ]
@@ -120,10 +113,6 @@ DHtmlFormatter >> setAttributes [
 	| attribs |
 	attribs := OrderedCollection new.
 	indentLevel > 0 ifTrue: [ attribs add: (TextIndent tabs: indentLevel) ].
-	boldLevel > 0 ifTrue: [ attribs add: TextEmphasis bold ].
-	italicsLevel >  0 ifTrue: [ attribs add: TextEmphasis italic ].
-	underlineLevel > 0 ifTrue: [ attribs add: TextEmphasis underlined ].
-	strikeLevel > 0 ifTrue: [ attribs add: TextEmphasis struckOut ].
 	urlLink isNil ifFalse: [ attribs add: (TextURL new url: urlLink) ].
 	fontSpecs isEmptyOrNil
 		ifFalse: [attribs addAll: fontSpecs last]
@@ -145,7 +134,6 @@ DHtmlFormatter >> startFont: aTextAttribList [
 { #category : #'formatting commands' }
 DHtmlFormatter >> startHeader: level [
 	self ensureNewlines: 3.
-	boldLevel := boldLevel + 1. "self increaseBold"
 	self startFont: (self headerFont: level).
 ]
 

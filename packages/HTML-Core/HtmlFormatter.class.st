@@ -129,11 +129,6 @@ HtmlFormatter >> addChar: c [
 			precedingSpaces := precedingNewlines := 0 ] ].
 ]
 
-{ #category : #'image maps' }
-HtmlFormatter >> addImageMap: anImageMap [
-	imageMaps addLast: anImageMap
-]
-
 { #category : #'formatting commands' }
 HtmlFormatter >> addIncompleteMorph: aMorph [
 	"add a morph, and note that it needs to download some more state before reaching its ultimate state"
@@ -233,12 +228,6 @@ HtmlFormatter >> addString: aString [
 ]
 
 { #category : #access }
-HtmlFormatter >> anchorLocations [
-	"return a dictionary mapping lowercase-ed anchor names into the integer positions they are located at in the text"
-	^anchorLocations
-]
-
-{ #category : #access }
 HtmlFormatter >> baseUrl [
 	"return the base URL for the document we are formatting, if known"
 	^baseUrl
@@ -262,20 +251,6 @@ HtmlFormatter >> browser: b [
 	browser := b.
 ]
 
-{ #category : #forms }
-HtmlFormatter >> currentFormData [
-	"return the current form data, or nil if we aren't inside a form"
-	formDatas size > 0 
-		ifTrue: [ ^formDatas last ]
-		ifFalse: [ ^nil ].
-]
-
-{ #category : #'formatting commands' }
-HtmlFormatter >> decreaseBold [
-	boldLevel := boldLevel - 1.
-	self setAttributes.
-]
-
 { #category : #'formatting commands' }
 HtmlFormatter >> decreaseIndent [
 	indentLevel := indentLevel - 1.
@@ -283,40 +258,8 @@ HtmlFormatter >> decreaseIndent [
 ]
 
 { #category : #'formatting commands' }
-HtmlFormatter >> decreaseItalics [
-	italicsLevel := italicsLevel - 1.
-	self setAttributes.
-]
-
-{ #category : #'formatting commands' }
 HtmlFormatter >> decreasePreformatted [
 	preformattedLevel := preformattedLevel - 1
-]
-
-{ #category : #'formatting commands' }
-HtmlFormatter >> decreaseStrike [
-	strikeLevel := strikeLevel - 1.
-	self setAttributes.
-]
-
-{ #category : #'formatting commands' }
-HtmlFormatter >> decreaseUnderline [
-	underlineLevel := underlineLevel - 1.
-	self setAttributes.
-]
-
-{ #category : #forms }
-HtmlFormatter >> endForm [
-	formDatas size > 0 ifTrue: [ 
-		formDatas removeLast. ]
-	ifFalse: [ self halt: 'HtmlFormatter: ended more forms that started!?' ].
-	self ensureNewlines: 1.
-]
-
-{ #category : #'formatting commands' }
-HtmlFormatter >> endHeader: level [
-	self decreaseBold.
-	self ensureNewlines: 2
 ]
 
 { #category : #'formatting commands' }
@@ -393,21 +336,10 @@ HtmlFormatter >> htmlInlineMorph [
 	^htmlInlineMorph
 ]
 
-{ #category : #'image maps' }
-HtmlFormatter >> imageMapNamed: imageMapName [
-	^imageMaps detect: [:im | im name asLowercase = imageMapName asLowercase] ifNone: []
-]
-
 { #category : #access }
 HtmlFormatter >> incompleteMorphs [
 	"list of morphs needing to download some more state"
 	^incompleteMorphs
-]
-
-{ #category : #'formatting commands' }
-HtmlFormatter >> increaseBold [
-	boldLevel := boldLevel + 1.
-	self setAttributes.
 ]
 
 { #category : #'formatting commands' }
@@ -417,33 +349,15 @@ HtmlFormatter >> increaseIndent [
 ]
 
 { #category : #'formatting commands' }
-HtmlFormatter >> increaseItalics [
-	italicsLevel := italicsLevel + 1.
-	self setAttributes.
-]
-
-{ #category : #'formatting commands' }
 HtmlFormatter >> increasePreformatted [
 	preformattedLevel := preformattedLevel + 1
-]
-
-{ #category : #'formatting commands' }
-HtmlFormatter >> increaseStrike [
-	strikeLevel := strikeLevel + 1.
-	self setAttributes.
-]
-
-{ #category : #'formatting commands' }
-HtmlFormatter >> increaseUnderline [
-	underlineLevel := underlineLevel + 1.
-	self setAttributes.
 ]
 
 { #category : #'private-initialization' }
 HtmlFormatter >> initialize [
 	outputStream := AttributedTextStream new.
 	preformattedLevel := 0.
-	indentLevel := boldLevel := italicsLevel := underlineLevel := strikeLevel := centerLevel := 0.
+	indentLevel := 0.
 	listLengths := OrderedCollection new.
 	listStyleTypes := OrderedCollection new.
 	listTypes := OrderedCollection new.
@@ -451,14 +365,7 @@ HtmlFormatter >> initialize [
 	precedingNewlines := 1000.   "more than will ever be asked for"
 	morphsToEmbed := OrderedCollection new.
 	incompleteMorphs := OrderedCollection new.
-	anchorLocations := Dictionary new.
-	imageMaps := OrderedCollection new.
-]
 
-{ #category : #'formatting commands' }
-HtmlFormatter >> noteAnchorStart: anchorName [
-	"note that an anchor starts at this point in the output"
-	anchorLocations at: anchorName asLowercase put: outputStream size
 ]
 
 { #category : #'private-formatting' }
@@ -467,25 +374,8 @@ HtmlFormatter >> setAttributes [
 	| attribs |
 	attribs := OrderedCollection new.
 	indentLevel > 0 ifTrue: [ attribs add: (TextIndent tabs: indentLevel) ].
-	boldLevel > 0 ifTrue: [ attribs add: TextEmphasis bold ].
-	italicsLevel >  0 ifTrue: [ attribs add: TextEmphasis italic ].
-	underlineLevel > 0 ifTrue: [ attribs add: TextEmphasis underlined ].
-	strikeLevel > 0 ifTrue: [ attribs add: TextEmphasis struckOut ].
 	urlLink isNil ifFalse: [ attribs add: (TextURL new url: urlLink) ].
 	outputStream currentAttributes: attribs
-]
-
-{ #category : #forms }
-HtmlFormatter >> startForm: form [
-	"a form is beginning"
-	self ensureNewlines: 1.
-	formDatas addLast: (FormInputSet forForm: form  andBrowser: browser).
-]
-
-{ #category : #'formatting commands' }
-HtmlFormatter >> startHeader: level [
-	self ensureNewlines: 3.
-	self increaseBold
 ]
 
 { #category : #'formatting commands' }

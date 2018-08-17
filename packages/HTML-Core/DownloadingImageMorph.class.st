@@ -67,16 +67,6 @@ DownloadingImageMorph >> formatter: aFormatter [
 	formatter := aFormatter
 ]
 
-{ #category : #accessing }
-DownloadingImageMorph >> imageMapName [
-	^imageMapName
-]
-
-{ #category : #accessing }
-DownloadingImageMorph >> imageMapName: aString [
-	imageMapName := aString
-]
-
 { #category : #initialization }
 DownloadingImageMorph >> initialize [
 	super initialize.
