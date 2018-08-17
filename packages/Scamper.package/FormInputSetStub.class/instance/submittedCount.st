@@ -1,4 +1,0 @@
-actions
-submittedCount
-
-	^submittedCount

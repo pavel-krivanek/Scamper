@@ -1,4 +1,0 @@
-testing
-isCSSError
-
-	^false

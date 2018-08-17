@@ -1,4 +1,0 @@
-testing
-test08fourShorthandAttributesShouldBeParsedCorrectly 
-
-	super fourShorthandAttributesShouldBeParsedCorrectly 

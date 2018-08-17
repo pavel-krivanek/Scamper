@@ -1,4 +1,0 @@
-testing
-isWebBrowser
-	
-	^ true.

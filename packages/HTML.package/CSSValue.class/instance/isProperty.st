@@ -1,4 +1,0 @@
-accessing
-isProperty
-
-	^false

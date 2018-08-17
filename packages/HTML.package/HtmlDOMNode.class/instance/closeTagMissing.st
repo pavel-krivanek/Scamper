@@ -1,5 +1,0 @@
-accessing
-closeTagMissing
-	
-
-	^self endTagMissing

@@ -1,4 +1,0 @@
-accessing
-keyCharacter
-
-	^ keyString

@@ -1,3 +1,0 @@
-access
-defaultBackgroundColor
-	^Color white

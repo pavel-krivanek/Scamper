@@ -1,4 +1,0 @@
-menus
-optionsPanelHeight
-
-	^ 120.

@@ -1,5 +1,0 @@
-testing
-isTypeOR
-
-
-	^false

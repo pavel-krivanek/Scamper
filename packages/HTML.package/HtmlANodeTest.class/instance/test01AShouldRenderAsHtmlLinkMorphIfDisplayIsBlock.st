@@ -1,4 +1,0 @@
-testing
-test01AShouldRenderAsHtmlLinkMorphIfDisplayIsBlock
-
-	self assert: self aNode getHtmlBlockMorph class equals: HtmlLinkMorph

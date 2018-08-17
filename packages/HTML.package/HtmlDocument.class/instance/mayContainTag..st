@@ -1,4 +1,0 @@
-parsing
-mayContainTag: aTag
-
-	^true

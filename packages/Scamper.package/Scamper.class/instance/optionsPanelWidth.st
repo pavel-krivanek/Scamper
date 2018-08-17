@@ -1,4 +1,0 @@
-menus
-optionsPanelWidth
-
-	^ 50.

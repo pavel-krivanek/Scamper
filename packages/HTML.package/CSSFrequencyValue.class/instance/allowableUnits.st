@@ -1,4 +1,0 @@
-accessing
-allowableUnits
-
-	^#( 'hz' 'khz')

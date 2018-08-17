@@ -1,6 +1,0 @@
-menus
-optionsPanel 
-
-	^ optionsPanel.
-				
-	

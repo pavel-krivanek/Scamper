@@ -1,4 +1,0 @@
-cookies
-longtimeCookies 
-
-	^ LongtimeCookies

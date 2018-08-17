@@ -1,4 +1,0 @@
-geometry
-getNorthEastCornerPosition
-
-	^self fullBounds.

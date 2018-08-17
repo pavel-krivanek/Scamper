@@ -1,5 +1,0 @@
-accessing
-asString
-
-	^self innerContents
-

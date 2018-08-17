@@ -1,4 +1,0 @@
-testing
-isInline
-
-	^url isNil

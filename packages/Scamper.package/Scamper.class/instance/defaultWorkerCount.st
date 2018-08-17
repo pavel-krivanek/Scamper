@@ -1,3 +1,0 @@
-private
-defaultWorkerCount
-	^5

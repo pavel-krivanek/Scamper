@@ -1,4 +1,0 @@
-constants
-attributeSuffix
-
-	self subclassResponsibility

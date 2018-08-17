@@ -1,4 +1,0 @@
-*Scamper
-isWebBrowser
-
-	^ false

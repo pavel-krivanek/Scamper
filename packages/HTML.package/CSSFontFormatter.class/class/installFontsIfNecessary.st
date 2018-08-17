@@ -1,4 +1,0 @@
-font installation
-installFontsIfNecessary
-
-

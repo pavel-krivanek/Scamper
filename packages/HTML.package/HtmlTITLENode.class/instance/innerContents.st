@@ -1,4 +1,0 @@
-accessing
-innerContents
-
-	^self rawContent

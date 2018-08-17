@@ -1,4 +1,0 @@
-accessing
-attributeMap
-
-	self subclassResponsibility

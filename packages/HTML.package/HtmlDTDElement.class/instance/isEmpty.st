@@ -1,4 +1,0 @@
-accessing
-isEmpty
-
-	^contentRule isEmpty

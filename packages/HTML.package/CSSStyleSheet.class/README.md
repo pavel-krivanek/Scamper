@@ -1,1 +1,0 @@
-I represent a collection of CSS style rules

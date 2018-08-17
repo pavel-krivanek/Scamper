@@ -1,4 +1,0 @@
-testing
-test06twoShorthandAttributesShouldBeParsedCorrectly 
-
-	super twoShorthandAttributesShouldBeParsedCorrectly 

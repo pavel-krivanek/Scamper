@@ -1,4 +1,0 @@
-accessing
-aNode
-
-	^ aNode

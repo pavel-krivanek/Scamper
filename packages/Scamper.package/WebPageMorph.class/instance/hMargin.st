@@ -1,3 +1,0 @@
-layout
-hMargin
-	^0

@@ -1,4 +1,0 @@
-matching
-isLiteral
-
-	^true

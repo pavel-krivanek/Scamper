@@ -1,4 +1,0 @@
-document handling
-content
-
-	^ content

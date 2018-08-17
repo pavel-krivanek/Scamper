@@ -1,3 +1,0 @@
-access
-workerCount
-	^self defaultWorkerCount 

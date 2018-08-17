@@ -1,4 +1,0 @@
-constants
-attributePrefix
-
-	^ 'padding'

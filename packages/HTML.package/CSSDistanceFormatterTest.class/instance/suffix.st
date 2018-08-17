@@ -1,4 +1,0 @@
-accessing
-suffix
-
-	self subclassResponsibility

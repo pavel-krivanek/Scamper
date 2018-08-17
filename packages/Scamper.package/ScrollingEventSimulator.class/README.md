@@ -1,1 +1,0 @@
-This class is used to simulate keyboard events, especially for scrolling keys

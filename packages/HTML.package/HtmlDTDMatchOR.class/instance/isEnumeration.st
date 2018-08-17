@@ -1,4 +1,0 @@
-matching
-isEnumeration
-
-	^true
