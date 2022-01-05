@@ -6,5 +6,5 @@ openOnUrl: aStringOrUrl
 	"
 	| scamper |
 	scamper := self new.
-	(scamper jumpToUrlAsync: aStringOrUrl asZnUrl) wait.
+	(scamper jumpToUrlAsync: aStringOrUrl asZnUrl asString) wait.
 	^ scamper openAsMorph
