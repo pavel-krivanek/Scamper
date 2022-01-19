@@ -5,4 +5,4 @@ test06InputShouldBeTrebuchetMS
 	document parseContents: (ReadStream on: '<kbd>sample input</kbd>').
 	node := document children first.
 	self assert: (self styleResolver getStyle: #fontFamily for: node) 
-		equals: (TextStyle named: 'TrebuchetMS').
+		equals: (TextStyle default).

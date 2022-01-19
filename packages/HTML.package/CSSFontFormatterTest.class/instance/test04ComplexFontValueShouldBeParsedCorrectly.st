@@ -10,4 +10,4 @@ test04ComplexFontValueShouldBeParsedCorrectly
 	self assert: false equals: (result at: #italic).
 	self assert: true equals: (result at: #bold).
 	self assert: 3 * CSSFontFormatter defaultSize equals: (result at: #fontSize).
-	self assert: (TextStyle named: 'Verdana') equals: (result at: #fontFamily).
+	self assert: (TextStyle default) equals: (result at: #fontFamily).

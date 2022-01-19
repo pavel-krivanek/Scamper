@@ -6,4 +6,4 @@ test03DefinitionShouldBeItalicAndTimes
 	node := document children first.
 	self assert: (self styleResolver getStyle: #italic for: node) equals: true.
 	self assert: (self styleResolver getStyle: #fontFamily for: node) 
-		equals: (TextStyle named: 'NimbusRomanNo9L').
+		equals: (TextStyle default).

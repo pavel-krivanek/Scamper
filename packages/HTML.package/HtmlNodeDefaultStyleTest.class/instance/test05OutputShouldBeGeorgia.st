@@ -5,4 +5,4 @@ test05OutputShouldBeGeorgia
 	document parseContents: (ReadStream on: '<samp>sample output</samp>').
 	node := document children first.
 	self assert: (self styleResolver getStyle: #fontFamily for: node) 
-		equals: (TextStyle named: 'Georgia').
+		equals: (TextStyle default).
