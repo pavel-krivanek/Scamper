@@ -1,8 +1,8 @@
 accessing
 browser
 	"get the browser object TextURL-style"
-	htmlMorph ifNotNil: [ :m |
-		[ m ~= nil ] whileTrue: [
-			(m hasProperty: #webBrowserView) ifTrue: [ ^ m model ].
-		  m := m owner ]].
+	htmlMorph ifNotNil: [ 
+		[ htmlMorph ~= nil ] whileTrue: [
+			(htmlMorph hasProperty: #webBrowserView) ifTrue: [ ^ htmlMorph model ].
+		  htmlMorph := htmlMorph owner ]].
 	^ nil
