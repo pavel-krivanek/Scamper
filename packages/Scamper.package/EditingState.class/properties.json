@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scamper",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"emphasisHere",
+		"pointBlock",
+		"markBlock",
+		"startOfTyping",
+		"previousInterval",
+		"previousSelection",
+		"undoManager",
+		"lastParenLocation",
+		"mouseDownInterval"
+	],
+	"name" : "EditingState",
+	"type" : "normal"
+}

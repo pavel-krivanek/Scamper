@@ -1,4 +1,1 @@
-SystemOrganization addCategory: #Scamper!
-SystemOrganization addCategory: #'Scamper-Core'!
-SystemOrganization addCategory: #'Scamper-HTML-Morphs'!
-SystemOrganization addCategory: #'Scamper-Tests'!
+self packageOrganizer ensurePackage: #Scamper withTags: #(#Buttons #Core #'HTML-Morphs' #Tests #Text)!

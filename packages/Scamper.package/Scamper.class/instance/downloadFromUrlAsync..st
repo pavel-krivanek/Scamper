@@ -9,7 +9,7 @@ downloadFromUrlAsync: aUrl
 	downloadWork := [ | newSource |
 		
 		"webpage"
-		(self isUrl: aUrl) ifTrue: [newSource := [self getContentFromWeb: aUrl] ifError: [ :msg :ctx |
+		(self isUrl: aUrl) ifTrue: [newSource := [self getContentFromWeb: aUrl] on: Error do: [ :msg :ctx |
 				msg logCr.
 		MIMEDocument contentType: 'text/plain' content: msg ]. handled := true.].
 		"intern site"

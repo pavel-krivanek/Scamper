@@ -1,0 +1,4 @@
+find-select
+defaultFindReplaceServiceClass
+
+	^ FindReplaceService

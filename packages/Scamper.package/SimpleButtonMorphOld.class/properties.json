@@ -1,0 +1,20 @@
+{
+	"classtraitcomposition" : "TAbleToRotate classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"target",
+		"actionSelector",
+		"arguments",
+		"actWhen",
+		"oldColor",
+		"label"
+	],
+	"name" : "SimpleButtonMorphOld",
+	"commentStamp" : "",
+	"super" : "BorderedMorph",
+	"traitcomposition" : "TAbleToRotate",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Scamper-Buttons"
+}

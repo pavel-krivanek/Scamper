@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "SimpleButtonMorphOld",
+	"category" : "Scamper-Buttons",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"DefaultGraphics"
+	],
+	"instvars" : [
+		"graphicalMorph",
+		"oldBorderStyle",
+		"mouseOverBorderStyle"
+	],
+	"name" : "IconicButton",
+	"type" : "normal"
+}

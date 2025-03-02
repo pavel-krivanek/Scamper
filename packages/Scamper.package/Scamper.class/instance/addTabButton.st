@@ -10,7 +10,7 @@ addTabButton
 		hResizing: #spaceFill;
 		label: ((self tabs at: indexOfTab) at: 2);
 		actionSelector: #openTab:;
-		arguments: indexOfTab asOrderedCollection).
+		arguments: (OrderedCollection with: indexOfTab )).
 		button openInWorld.
 	
 	tabPaneVariable addMorph: button.
