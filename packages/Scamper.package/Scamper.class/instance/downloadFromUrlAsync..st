@@ -13,11 +13,11 @@ downloadFromUrlAsync: aUrl
 				msg logCr.
 		MIMEDocument contentType: 'text/plain' content: msg ]. handled := true.].
 		"intern site"
-		(self isInternBrowserUrl: aUrl) ifTrue: [newSource := [ aUrl getlocalContentsforBrowser: self ] ifError: [ :msg :ctx |
+		(self isInternBrowserUrl: aUrl) ifTrue: [newSource := [ aUrl getlocalContentsforBrowser: self ] on: Error do: [ :msg :ctx |
 		MIMEDocument contentType: 'text/plain' content: msg ]. handled := true.].
 		"file"
-		handled ifFalse: [newSource := [aUrl retrieveContentsForBrowser: self] ifError: [ :msg :ctx |
-		MIMEDocument contentType: 'text/plain' content: msg ]. handled := true.].
+		handled ifFalse: [newSource := [aUrl retrieveContentsForBrowser: self] on: Error do: [ :err |
+		MIMEDocument contentType: 'text/plain' content: err ]. handled := true.].
 
 		newSource 
 			ifNil: [ newSource := MIMEDocument contentType: 'text/plain' content: 'Error retrieving this URL' translated].

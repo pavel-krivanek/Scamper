@@ -4,5 +4,5 @@ drawOn: aCanvas
 
 	super drawOn: aCanvas. 
 	self wantsFrameAdornments ifTrue: [
-		self theme drawTextAdornmentsFor: self on: aCanvas].
+		self theme drawTextAdornmentFor: self color: Color orange on: aCanvas].
 	self drawHighlightsOn: aCanvas

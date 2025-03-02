@@ -4,5 +4,5 @@ drawOnAthensCanvas: anAthensCanvas
 
 	super drawOnAthensCanvas: anAthensCanvas. 
 	self wantsFrameAdornments ifTrue: [
-		self theme drawTextAdornmentsFor: self on: anAthensCanvas asCanvasWrapper].
+		self theme drawTextAdornmentFor: self color: Color orange on: anAthensCanvas asCanvasWrapper].
 	self drawHighlightsOn: anAthensCanvas asCanvasWrapper
