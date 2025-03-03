@@ -7,7 +7,7 @@ displayImagePage: newSource
 	"check if Image is svg"
 	((newSource contentType) includesSubString: 'svg') ifTrue: [
 		[imageMorph := SVGMorph fromFileStream: newSource contentStream.]
-			ifError: [:err :crvr | imageMorph := StringMorph new; contents: 'You need SVGMorphic to display svg content!'.] 
+			on: Error do: [:err | imageMorph := StringMorph new; contents: 'You need SVGMorphic to display svg content!'.] 
 	]
 	"if not -> use default ImageReader"
 	ifFalse: [

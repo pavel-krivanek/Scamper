@@ -1,11 +1,1 @@
-SystemOrganization addCategory: #HTML!
-SystemOrganization addCategory: #'HTML-CSS'!
-SystemOrganization addCategory: #'HTML-CSS-Errors'!
-SystemOrganization addCategory: #'HTML-CSS-Tests'!
-SystemOrganization addCategory: #'HTML-DOM'!
-SystemOrganization addCategory: #'HTML-DOM-Errors'!
-SystemOrganization addCategory: #'HTML-Formatter'!
-SystemOrganization addCategory: #'HTML-Forms'!
-SystemOrganization addCategory: #'HTML-PList'!
-SystemOrganization addCategory: #'HTML-Tests'!
-SystemOrganization addCategory: #'HTML-Validator'!
+self packageOrganizer ensurePackage: #HTML withTags: #(#CSS #'CSS-Errors' #'CSS-Tests' #DOM #'DOM-Errors' #Formatter #Forms #PList #Tests #Validator)!

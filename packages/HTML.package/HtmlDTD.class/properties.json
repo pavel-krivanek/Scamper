@@ -16,7 +16,8 @@
 		"comments",
 		"elements",
 		"attLists",
-		"entities"
+		"entities",
+		"attributes"
 	],
 	"name" : "HtmlDTD",
 	"type" : "normal"

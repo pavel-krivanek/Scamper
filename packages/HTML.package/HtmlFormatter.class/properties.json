@@ -21,7 +21,14 @@
 		"precedingSpaces",
 		"precedingNewlines",
 		"morphsToEmbed",
-		"incompleteMorphs"
+		"incompleteMorphs",
+		"boldLevel",
+		"italicsLevel",
+		"underlineLevel",
+		"strikeLevel",
+		"centerLevel",
+		"anchorLocations",
+		"imageMaps"
 	],
 	"name" : "HtmlFormatter",
 	"type" : "normal"

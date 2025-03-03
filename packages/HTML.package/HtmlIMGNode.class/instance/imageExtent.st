@@ -4,4 +4,4 @@ imageExtent
 	| widthText heightText |
 	widthText := self attributes at: 'width' ifAbsent: [ ^nil ].
 	heightText := self attributes at: 'height' ifAbsent: [ ^nil ].
-	^ [ widthText asNumber @ heightText asNumber ] ifError: [ :a :b | nil ]
+	^ [ widthText asNumber @ heightText asNumber ] on: Error do: [ :a :b | nil ]

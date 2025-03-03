@@ -24,7 +24,7 @@ jumpToAbsoluteUrlAsync: urlText
 	self addNextToRecentDocuments.
 	^ (self downloadFromUrlAsync: newUrl)
 		then: [ :aDocument |
-			WorldState addDeferredUIMessage: [ self processDocument: aDocument ].
+			UIManager default defer: [ self processDocument: aDocument ].
 			self
 			].
 	

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SimpleButtonMorphOld",
-	"category" : "Scamper-Buttons",
+	"category" : "Scamper-Compatibility",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [

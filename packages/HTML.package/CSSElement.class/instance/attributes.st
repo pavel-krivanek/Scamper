@@ -1,4 +1,4 @@
 accessing
 attributes
 
-	^ Dictionary new
+	^ attributes ifNil: [ attributes := Dictionary new ]

@@ -8,4 +8,4 @@ loadStyles
 		content: doc content; 
 		start: 0; 
 		end: doc content size.
-	self parseContents: (ReadStream on: self content)] on: Error do: [ :e | e logCr ]
+	self parseContents: (ReadStream on: self content)] on: Error do: [ :e | e traceCr ]

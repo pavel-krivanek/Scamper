@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "IconicButton",
-	"category" : "Scamper-Core",
+	"category" : "Scamper",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

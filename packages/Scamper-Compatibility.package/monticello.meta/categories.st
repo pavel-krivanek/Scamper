@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Scamper-Compatibility'!
+self packageOrganizer ensurePackage: #'Scamper-Compatibility' withTags: #()!

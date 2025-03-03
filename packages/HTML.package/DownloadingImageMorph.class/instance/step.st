@@ -16,7 +16,7 @@ step
 		(doc notNil "and: [doc mainType = 'image']")
 		ifTrue: [
 			[image := ImageReadWriter formFromStream: doc readStream" contentStream binary"]
-				ifError: [:err :rcvr | err logCr. "ignore" image := nil].
+				on: Error do: [:err  | err traceCr. "ignore" image := nil].
 			self setContents.
 			]. 
 		].

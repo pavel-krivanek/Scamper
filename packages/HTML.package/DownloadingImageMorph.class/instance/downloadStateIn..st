@@ -2,6 +2,6 @@ rendering
 downloadStateIn: aScamper
 	"download the image"
 	| doc |
-	doc := [url retrieveContents] ifError: [:err | err logCr ].
+	doc := [url retrieveContents] on: Error do: [:err | err traceCr ].
 	downloadQueue nextPut: doc.
 
