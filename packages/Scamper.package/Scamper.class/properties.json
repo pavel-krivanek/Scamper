@@ -31,7 +31,10 @@
 		"currentTab",
 		"optionsPanel",
 		"searchEngineUrl",
-		"menuHistory"
+		"menuHistory",
+		"formattedPage",
+		"currentAnchorLocation",
+		"backgroundColor"
 	],
 	"name" : "Scamper",
 	"type" : "normal"

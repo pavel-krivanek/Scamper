@@ -5,7 +5,14 @@ urlEditPane
 	| pane paneUI paneURL |
 	pane := AlignmentMorph new color: (Color r:1 g:1 b:1).
 				
-	paneURL := (PluggableTextMorph on: self text: #currentUrl accept: #jumpToAbsoluteUrlAsync:).
+	"paneURL := (PluggableTextMorph on: self text: #currentUrl accept: #jumpToAbsoluteUrlAsync:)."
+	
+	paneURL := RubScrolledTextModel new newTextField
+		hResizing: #spaceFill;
+		autoAccept: true;
+		yourself.
+		
+	paneURL announcer when: RubTextAcceptRequest send: #jumpToAbsoluteUrlAsync: to: self.
 				
 	paneUI := (AlignmentMorph new)
 				color: (Color r:0.1 g:1 b:1).
@@ -42,7 +49,7 @@ urlEditPane
 					withIcon:  (ImageReadWriter formFromFileNamed: self iconOptions asFileReference)).
 					
 	paneURL acceptOnCR: true.
-	paneURL hideScrollBarsIndefinitely.
+	"paneURL hideScrollBarsIndefinitely."
 	
 	^ pane. 
 		

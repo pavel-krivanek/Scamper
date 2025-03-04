@@ -3,7 +3,7 @@ displayPlainTextPage: newSource
 	"treat as plain text"
 	pageSource := newSource content.
 	document := nil.
-	formattedPage := pageSource withSqueakLineEndings.
+	formattedPage := pageSource withInternalLineEndings.
 	backgroundColor := self defaultBackgroundColor.
 	currentUrl := newSource url.
 

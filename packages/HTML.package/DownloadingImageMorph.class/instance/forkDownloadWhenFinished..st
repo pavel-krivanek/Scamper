@@ -8,7 +8,7 @@ forkDownloadWhenFinished: aBlock
 			doc := url retrieveContents.
 			(doc notNil and: [doc mainType = 'image'])
 				ifTrue: [image := ImageReadWriter formFromStream: doc contentStream binary].
-		] ifError: [].
+		] on: Error do: [ :e | e traceCr ].
 		WorldState addDeferredUIMessage:
 			[image ifNotNil: [self setContents].
 			self stopStepping.

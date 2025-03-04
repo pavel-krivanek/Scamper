@@ -1,8 +1,10 @@
 changing page
-jumpToAbsoluteUrlAsync: urlText
+jumpToAbsoluteUrlAsync: ann
 	"start downloading a new page.  The page source is downloaded in a background thread. 
 	If urlText is no Url, emulate search bar behaviour and google the input"
-	|  newUrl queryString |
+	|  newUrl queryString urlText |
+	
+	urlText := ann morph text.
 
 	self stopEverything.
 	(self isSearchWords: urlText) 
