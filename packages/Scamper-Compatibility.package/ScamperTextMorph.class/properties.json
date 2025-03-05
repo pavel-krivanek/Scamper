@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TextMorph",
+	"category" : "Scamper-Compatibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ScamperTextMorph",
+	"type" : "normal"
+}

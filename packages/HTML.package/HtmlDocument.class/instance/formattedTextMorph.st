@@ -6,7 +6,7 @@ formattedTextMorph
 	self addToFormatter: formatter.
 	text := formatter text .
 
-	textMorph := TextMorph new initialize.
+	textMorph := ScamperTextMorph new initialize.
 	textMorph contentsWrapped: text.
 
 	^textMorph

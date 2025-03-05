@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Scamper",
+	"category" : "Scamper-Compatibility",
 	"classinstvars" : [
 		"cmdActions",
 		"shiftCmdActions",

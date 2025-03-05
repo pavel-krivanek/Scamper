@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TextMorph",
+	"super" : "ScamperTextMorph",
 	"category" : "Scamper-HTML-Morphs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
