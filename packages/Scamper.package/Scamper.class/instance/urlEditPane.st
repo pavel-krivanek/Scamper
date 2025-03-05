@@ -12,7 +12,7 @@ urlEditPane
 		autoAccept: true;
 		yourself.
 		
-	paneURL announcer when: RubTextAcceptRequest send: #jumpToAbsoluteUrlAsync: to: self.
+	paneURL announcer when: RubTextAcceptRequest send: #acceptAddressField: to: self.
 				
 	paneUI := (AlignmentMorph new)
 				color: (Color r:0.1 g:1 b:1).
