@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ScrollPane",
-	"category" : "Scamper",
+	"category" : "Scamper-Compatibility",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [

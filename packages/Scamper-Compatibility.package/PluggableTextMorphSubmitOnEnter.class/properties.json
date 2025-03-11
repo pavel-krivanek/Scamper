@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "PluggableTextMorph",
-	"category" : "Scamper-HTML-Morphs",
+	"category" : "Scamper-Compatibility",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,1 +1,1 @@
-self packageOrganizer ensurePackage: #Scamper withTags: #(#Buttons #Core #'HTML-Morphs' #Tests #Text)!
+self packageOrganizer ensurePackage: #Scamper withTags: #(#Core #'HTML-Morphs' #Tests)!
